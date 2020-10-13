@@ -6,37 +6,37 @@ using UnityEngine;
 public class Plant : MonoBehaviour
 {
     private string name;
-    private bool isAlive;
-    private bool isThirsty;
     private int moisturised; //(0-10)
     private int level; //(1-30)
-    private int skin; //(1-3)
 
     public void initiatePlant (string name) //Could not call constructor from Unity, so made a work-a-round function. Sander pls dont be mad :/
     {
         this.name = name;
-        moisturised = 6;
+        moisturised = 5;
         level = 1;
-        isThirsty = isThirstyFunction();
-        isAlive = isAliveFunction();
-        skin = whichSkin();
     }
 
     public bool isThirstyFunction()
     {
-       return moisturised < 7;
+       return moisturised < 6;
     }   
 
 
     public bool isAliveFunction()
     {
-        return moisturised <= 0;
+        return moisturised >= 0;
     }
 
     public void watering()
     {
-        moisturised++;
-        level++;
+        if(isAliveFunction() && moisturised < 10) //Can only moisturise if not dead and not fully satisfied
+        {
+            moisturised++;
+            if(!isThirstyFunction()) //Can only grow if not thirsty
+            {
+                level++;
+            }
+        }
     }
 
     public void dryening()
@@ -44,9 +44,14 @@ public class Plant : MonoBehaviour
         moisturised--;
     }
 
-    public int whichSkin()
+    public int whichSkin() 
     {
-        if (level < 10)
+        int skin = 0; //Annoying warning if not initiated
+        if (level <= 0)
+        {
+            skin = 0;
+        }
+        if (level >= 1 && level < 10)
         {
             skin = 1;
         }
@@ -63,7 +68,11 @@ public class Plant : MonoBehaviour
 
     public void toString()
     {
-        Debug.Log("name" + name);
+        string DebugString = "name: " + name + System.Environment.NewLine + "Alive: " + isAliveFunction() + System.Environment.NewLine;
+        DebugString += "Thirsty: " + isThirstyFunction() + System.Environment.NewLine + "moisture " + moisturised + System.Environment.NewLine;
+        DebugString += "Level: " + level + System.Environment.NewLine + "Skin: " + whichSkin();
+
+        Debug.Log(DebugString);
     }
 
 }
