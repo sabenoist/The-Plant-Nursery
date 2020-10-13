@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
-public class Plant
+public class Plant : MonoBehaviour
 {
     private string name;
     private bool isAlive;
@@ -11,9 +12,9 @@ public class Plant
     private int level; //(1-30)
     private int skin; //(1-3)
 
-    public Plant (string name)
+    public void initiatePlant (string name) //Could not call constructor from Unity, so made a work-a-round function. Sander pls dont be mad :/
     {
-        name = this.name;
+        this.name = name;
         moisturised = 6;
         level = 1;
         isThirsty = isThirstyFunction();
@@ -59,5 +60,10 @@ public class Plant
         }
         return skin;
     }   
+
+    public void toString()
+    {
+        Debug.Log("name" + name);
+    }
 
 }
