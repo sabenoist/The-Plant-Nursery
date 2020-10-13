@@ -5,9 +5,11 @@ using UnityEngine.UIElements;
 
 public class GPSCameraTracker : MonoBehaviour {
     public Transform target;
-    public float distance;
+    public float xOffset;
+    public float yOffset;
+    public float zOffset;
 
     void Update() {
-        transform.position = new Vector3(target.position.x, target.position.y + 20, target.position.z - distance);
+        transform.position = new Vector3(target.position.x + xOffset, target.position.y + yOffset, target.position.z + zOffset);
     }
 }
