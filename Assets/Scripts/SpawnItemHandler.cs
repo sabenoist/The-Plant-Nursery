@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnItem : MonoBehaviour {
+public class SpawnItemHandler : MonoBehaviour {
     public Transform playerTarget;
     public GameObject waterPrefab;
 
@@ -14,6 +14,8 @@ public class SpawnItem : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+        MapItemHandler.playerTarget = playerTarget;
+
         for (int i = 0; i < maxItems; i++) {
             Spawn();
         }
@@ -28,7 +30,6 @@ public class SpawnItem : MonoBehaviour {
 
     public void Spawn() {
         Vector3 pos = center + new Vector3(Random.Range(playerTarget.position.x - size.x / 2, playerTarget.position.x + size.x / 2), 2, Random.Range(playerTarget.position.z - size.z / 2, playerTarget.position.x +  size.z / 2));
-
         Instantiate(waterPrefab, pos, Quaternion.identity);
 
         itemCounter++;

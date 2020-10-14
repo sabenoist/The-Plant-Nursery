@@ -695,10 +695,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTarget: {fileID: 1514262915}
-  waterPrefab: {fileID: 3294540835100265767, guid: 31bdbc4367dbc0345b3312b2e0be789b, type: 3}
+  waterPrefab: {fileID: 3830675059964600005, guid: 31bdbc4367dbc0345b3312b2e0be789b, type: 3}
   center: {x: 0, y: 0, z: 0}
   size: {x: 250, y: 1, z: 250}
-  maxItems: 75
+  maxItems: 10
 --- !u!1 &1380961190
 GameObject:
   m_ObjectHideFlags: 0
