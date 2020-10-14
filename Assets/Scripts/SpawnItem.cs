@@ -27,7 +27,7 @@ public class SpawnItem : MonoBehaviour {
     }
 
     public void Spawn() {
-        Vector3 pos = center + new Vector3(Random.Range(playerTarget.position.x - size.x / 2, playerTarget.position.x + size.x / 2), Random.Range(playerTarget.position.y - size.y / 2, playerTarget.position.y + size.y / 2), Random.Range(playerTarget.position.z - size.z / 2, playerTarget.position.x +  size.z / 2));
+        Vector3 pos = center + new Vector3(Random.Range(playerTarget.position.x - size.x / 2, playerTarget.position.x + size.x / 2), 2, Random.Range(playerTarget.position.z - size.z / 2, playerTarget.position.x +  size.z / 2));
 
         Instantiate(waterPrefab, pos, Quaternion.identity);
 
