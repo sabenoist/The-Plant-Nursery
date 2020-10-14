@@ -698,6 +698,7 @@ MonoBehaviour:
   waterPrefab: {fileID: 3294540835100265767, guid: 31bdbc4367dbc0345b3312b2e0be789b, type: 3}
   center: {x: 0, y: 0, z: 0}
   size: {x: 250, y: 1, z: 250}
+  maxItems: 75
 --- !u!1 &1380961190
 GameObject:
   m_ObjectHideFlags: 0
