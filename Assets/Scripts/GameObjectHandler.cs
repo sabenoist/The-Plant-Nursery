@@ -8,7 +8,7 @@ public class GameObjectHandler : MonoBehaviour
  
     public GameObject myPrefab;
     private int maxAmount = 0;
-    GameObject Plant_1(Clone);
+    GameObject Plant_1;
     Plant TheScript;
     // Start is called before the first frame update
     void Start()
@@ -33,8 +33,8 @@ public class GameObjectHandler : MonoBehaviour
 
     public void watering()
     {
-        Plant_1(Clone) = GameObject.Find("Plant1");
-        TheScript = Plant_1(Clone).GetComponent<Plant>();
+        Plant_1 = GameObject.Find("Plant1");
+        TheScript = Plant_1.GetComponent<Plant>();
         TheScript.watering();
         TheScript.toString();
     }

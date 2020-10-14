@@ -10,7 +10,7 @@ public class SpawnItem : MonoBehaviour {
     public Vector3 size;
 
     public int maxItems;
-    private int itemCounter;
+    public static int itemCounter;
 
     // Start is called before the first frame update
     void Start() {
