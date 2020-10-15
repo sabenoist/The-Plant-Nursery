@@ -844,7 +844,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dda13fb93980e074faf80f6e60979110, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a8c8bc22781ca94469e356ab3c4eb423, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -988,6 +988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 138228507}
+  sellingSound: {fileID: 0}
 --- !u!1 &1321018811
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,6 +1101,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 762635835}
     m_Modifications:
+    - target: {fileID: 9047706534856552042, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047706534973839055, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9047706535070592884, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
       propertyPath: m_Text
       value: Find water drops around you and click on screen to collect them
@@ -1107,6 +1116,18 @@ PrefabInstance:
     - target: {fileID: 9047706535945047120, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
       propertyPath: m_Name
       value: AR Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047706535945047120, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047706535945047122, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047706535945047122, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9047706535945047123, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1191,6 +1212,10 @@ PrefabInstance:
     - target: {fileID: 9047706535945047123, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047706535988971823, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
@@ -1309,6 +1334,10 @@ PrefabInstance:
     - target: {fileID: 8345808103432357852, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}
       propertyPath: m_Name
       value: Title Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345808103432357852, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}

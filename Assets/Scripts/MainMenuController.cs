@@ -22,6 +22,7 @@ public class MainMenuController : MonoBehaviour {
             GameObject map = GameObject.Find("PlayerMap(Clone)");
             GameObject player = map.transform.FindChild("PlayerTarget").gameObject;
 
+            MapData.map = map;
             MapData.player = player;
         }
 
