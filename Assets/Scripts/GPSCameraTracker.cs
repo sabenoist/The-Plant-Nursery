@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 public class GPSCameraTracker : MonoBehaviour {
-    //private Transform target;
     public float xOffset;
     public float yOffset;
     public float zOffset;

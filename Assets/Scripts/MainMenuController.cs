@@ -17,12 +17,21 @@ public class MainMenuController : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+        if (MapData.gameControllerExists) {
+            Destroy(gameObject);
+            return;
+        }
+
+        MapData.gameControllerExists = true;
+
         if (MapData.map == null) {
             Instantiate(mapPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             GameObject map = GameObject.Find("PlayerMap(Clone)");
             GameObject player = map.transform.Find("PlayerTarget").gameObject;
+            GameObject maptile = map.transform.Find("Map").gameObject;
 
             MapData.map = map;
+            MapData.mapTile = maptile;
             MapData.player = player;
         }
 
