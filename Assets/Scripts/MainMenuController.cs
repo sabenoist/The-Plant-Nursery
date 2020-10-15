@@ -20,7 +20,7 @@ public class MainMenuController : MonoBehaviour {
         if (MapData.map == null) {
             Instantiate(mapPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             GameObject map = GameObject.Find("PlayerMap(Clone)");
-            GameObject player = map.transform.FindChild("PlayerTarget").gameObject;
+            GameObject player = map.transform.Find("PlayerTarget").gameObject;
 
             MapData.player = player;
         }
