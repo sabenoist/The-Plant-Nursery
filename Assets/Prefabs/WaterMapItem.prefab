@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2808151847806760357}
   - component: {fileID: 2209034355204338070}
   - component: {fileID: 5731096012561614304}
+  - component: {fileID: 3834042605518726437}
   m_Layer: 0
   m_Name: WaterMapItem
   m_TagString: Untagged
@@ -112,3 +113,15 @@ MonoBehaviour:
   minDistance: 8
   testAway: {fileID: 2100000, guid: 9e4d76b27b316c545a12b59f4b0a7fbc, type: 2}
   testProximate: {fileID: 2100000, guid: cea9961b8c4289746871146796803fc8, type: 2}
+--- !u!114 &3834042605518726437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830675059964600005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e16982ffb393afd4c8a36e34e5562b10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
