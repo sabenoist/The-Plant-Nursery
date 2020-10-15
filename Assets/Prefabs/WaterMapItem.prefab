@@ -109,3 +109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 50
+  minDistance: 8
+  testAway: {fileID: 2100000, guid: 9e4d76b27b316c545a12b59f4b0a7fbc, type: 2}
+  testProximate: {fileID: 2100000, guid: cea9961b8c4289746871146796803fc8, type: 2}
