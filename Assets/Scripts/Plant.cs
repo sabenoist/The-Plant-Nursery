@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System.CodeDom.Compiler;
+using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
@@ -8,15 +9,25 @@ public class Plant : MonoBehaviour
     private string name;
     private int moisturised; //(0-10)
     private int level; //(1-30)
-
+    public GameObject[] PrefabPlantStages;
+    private int skin;
+    private GameObject TreeDM;
 
     public void initiatePlant (string name) //Could not call constructor from Unity, so made a work-a-round function. Sander pls dont be mad :/
     {
         this.name = name;
         moisturised = 5;
         level = 1;
+        skin = 1; //Annoying warning if not initiated
+       // TreeDM = Instantiate(PrefabPlantStages[1]);
+       TreeDM = Instantiate(PrefabPlantStages[1], new Vector3((float)0.1, (float)0.1, (float)0.1), Quaternion.identity);
+        //Instantiate()
     }
 
+    public void Start()
+    {
+        skin = 1; //Annoying warning if not initiated
+    }
     public bool isThirstyFunction()
     {
        return moisturised < 6;
@@ -38,6 +49,7 @@ public class Plant : MonoBehaviour
                 level++;
             }
         }
+        whichSkin();
     }
 
     public void dryening()
@@ -47,21 +59,38 @@ public class Plant : MonoBehaviour
 
     public int whichSkin() 
     {
-        int skin = 0; //Annoying warning if not initiated
+        //private const double 
         if (level <= 0)
         {
             skin = 0;
         }
         if (level >= 1 && level < 10)
         {
-            skin = 1;
+            if(skin != 1)
+            {
+               // GameObject temp = TreeDM;
+                Destroy(TreeDM);
+                //TreeDM = Instantiate(PrefabPlantStages[1], new Vector3((float)0.1, (float)0.1, (float)0.1), Quaternion.identity);
+                TreeDM = Instantiate(PrefabPlantStages[1]);
+            }
+            skin = 1;          
         }
         if (level >= 10 && level < 20)
         {
+            if (skin != 2)
+            {
+                Destroy(TreeDM);
+                TreeDM = Instantiate(PrefabPlantStages[2]);
+            }
             skin = 2;
         }
         if (level >= 20 )
         {
+            if (skin != 3)
+            {
+                Destroy(TreeDM);
+                TreeDM = Instantiate(PrefabPlantStages[3]);
+            }
             skin = 3;
         }
         return skin;
