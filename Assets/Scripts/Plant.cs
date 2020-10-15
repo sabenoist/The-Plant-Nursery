@@ -9,6 +9,7 @@ public class Plant : MonoBehaviour
     private int moisturised; //(0-10)
     private int level; //(1-30)
 
+
     public void initiatePlant (string name) //Could not call constructor from Unity, so made a work-a-round function. Sander pls dont be mad :/
     {
         this.name = name;
@@ -66,6 +67,11 @@ public class Plant : MonoBehaviour
         return skin;
     }   
 
+    public void setName(string name)
+    {
+        this.name = name;
+    }
+
     public void toString()
     {
         string DebugString = "name: " + name + System.Environment.NewLine + "Alive: " + isAliveFunction() + System.Environment.NewLine;
@@ -73,6 +79,21 @@ public class Plant : MonoBehaviour
         DebugString += "Level: " + level + System.Environment.NewLine + "Skin: " + whichSkin();
 
         Debug.Log(DebugString);
+    }
+
+    public string getName()
+    {
+        return name;
+    }
+
+    public int getMoisture()
+    {
+        return moisturised;
+    }
+
+    public int getLevel()
+    {
+        return level;
     }
 
 }
