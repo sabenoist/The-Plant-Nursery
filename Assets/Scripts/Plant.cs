@@ -21,7 +21,7 @@ public class Plant : MonoBehaviour
         skin = 1; //Annoying warning if not initiated
        // TreeDM = Instantiate(PrefabPlantStages[1]);
        TreeDM = Instantiate(PrefabPlantStages[1], new Vector3((float)0.1, (float)0.1, (float)0.1), Quaternion.identity);
-        Instantiate()
+        //Instantiate()
     }
 
     public void Start()
