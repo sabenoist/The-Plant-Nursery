@@ -2844,6 +2844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 4069996}
+  sellingSound: {fileID: 0}
 --- !u!1 &1635471556
 GameObject:
   m_ObjectHideFlags: 0
