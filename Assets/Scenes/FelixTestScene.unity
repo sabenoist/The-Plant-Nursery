@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activePlant: 0
-  Prefab_Plant_A: {fileID: 6049487597749453770, guid: a6aebdcba7f10f64ebd9d88544e1aec4, type: 3}
+  Prefab_Plant_A: {fileID: 8926591418814564596, guid: a6a7aa3f2425b324e9ff5634fe2b5b6b, type: 3}
   Prefab_Plant_B: {fileID: 2470060581687347234, guid: 579e00e146408884fbb6ceba732ddbd2, type: 3}
   Prefab_Plant_C: {fileID: 2043721067656782552, guid: 1513a91acc622ae4faf4d24909459ba1, type: 3}
   Plants: []
@@ -1695,7 +1695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activePlant: 0
-  Prefab_Plant_A: {fileID: 0}
+  Prefab_Plant_A: {fileID: 8926591418814564596, guid: a6a7aa3f2425b324e9ff5634fe2b5b6b, type: 3}
   Prefab_Plant_B: {fileID: 0}
   Prefab_Plant_C: {fileID: 0}
   Plants:
