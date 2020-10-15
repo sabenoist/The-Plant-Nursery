@@ -877,6 +877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 1627551071}
+  sellingSound: {fileID: 0}
 --- !u!1001 &1627551068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1258,7 +1259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9047706535945047123, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -59
+      value: -70.5
       objectReference: {fileID: 0}
     - target: {fileID: 9047706535945047123, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1266,7 +1267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9047706535945047123, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -802.4142
+      value: -779.34436
       objectReference: {fileID: 0}
     - target: {fileID: 9047706535945047123, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
       propertyPath: m_AnchorMin.x

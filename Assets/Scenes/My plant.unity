@@ -1887,7 +1887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Plant AR Scene
+      value: AR Plant Test
       objectReference: {fileID: 0}
     - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
