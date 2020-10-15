@@ -876,7 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66522ceeeea41af4fa952f77d064abbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSound: {fileID: 0}
+  buttonSound: {fileID: 1627551071}
 --- !u!1001 &1627551068
 PrefabInstance:
   m_ObjectHideFlags: 0

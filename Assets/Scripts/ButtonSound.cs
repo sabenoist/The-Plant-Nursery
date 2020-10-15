@@ -5,6 +5,7 @@ using UnityEngine;
 public class ButtonSound : MonoBehaviour
 {
     public AudioSource buttonSound;
+    public AudioSource sellingSound;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +23,10 @@ public class ButtonSound : MonoBehaviour
     {
        buttonSound.Play();
 
+    }
+
+    public void playSellingSound()
+    {
+      sellingSound.Play();
     }
 }
