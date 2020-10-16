@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-public class PlacementIndicator : MonoBehaviour
+public class PlacementManager : MonoBehaviour
 {
-    private ARRaycastManager rayManager;
-    private GameObject visual;
+    public ARRaycastManager rayManager;
+    public GameObject visual;
 
     void Start()
     {
