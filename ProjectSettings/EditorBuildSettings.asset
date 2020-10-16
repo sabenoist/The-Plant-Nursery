@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Collect Item AR View.unity
     guid: 92a8bfa24a655fd48b3703f51d48c10f
   - enabled: 1
-    path: Assets/Scenes/AR Plant Test.unity
+    path: Assets/Scenes/AR Plant Scene.unity
     guid: b04a23e2a8d068f42ad1e3e5109b5168
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 61392a3c218ef6542a7ead6c20a811a1, type: 2}
