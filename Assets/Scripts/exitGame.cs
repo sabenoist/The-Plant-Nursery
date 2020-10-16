@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class exitAR : MonoBehaviour
+public class exitGame : MonoBehaviour
 {
     public Canvas start;
     public Button exit;
