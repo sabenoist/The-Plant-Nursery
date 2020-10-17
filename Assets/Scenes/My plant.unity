@@ -902,7 +902,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 350531474}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1861685100}
+        m_TargetAssemblyTypeName: PlantControl, Assembly-CSharp
+        m_MethodName: delete3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1575066344}
+        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+        m_MethodName: playSoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &350531474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1464,7 +1488,7 @@ GameObject:
   - component: {fileID: 618193198}
   - component: {fileID: 618193197}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Plant 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1509,7 +1533,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e5cc896fb61b1b8469eb1b7b8327ad27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1608,7 +1632,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 719583241}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1861685100}
+        m_TargetAssemblyTypeName: PlantControl, Assembly-CSharp
+        m_MethodName: delete2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1575066344}
+        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+        m_MethodName: playSoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &719583241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4057,7 +4105,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1861685100}
         m_TargetAssemblyTypeName: PlantControl, Assembly-CSharp
-        m_MethodName: delete
+        m_MethodName: delete1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1575066344}
+        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+        m_MethodName: playSoundEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4270,7 +4330,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 987777583}
-  item: {fileID: 2006378093}
+  item1: {fileID: 2006378093}
+  item2: {fileID: 618193195}
+  item3: {fileID: 1946769620}
 --- !u!1 &1874759240
 GameObject:
   m_ObjectHideFlags: 0
@@ -4358,7 +4420,7 @@ GameObject:
   - component: {fileID: 1946769623}
   - component: {fileID: 1946769622}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Plant3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4403,7 +4465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 945245fc36b60b245957566743657f9c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4433,7 +4495,7 @@ GameObject:
   - component: {fileID: 2006378096}
   - component: {fileID: 2006378095}
   m_Layer: 5
-  m_Name: Plant Image
+  m_Name: Plant 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4478,7 +4540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aeac616679533594d9bbec08f4f23512, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f97d1845c9d85284fb8988edb7aa5dc5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

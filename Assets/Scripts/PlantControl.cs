@@ -9,28 +9,44 @@ public class PlantControl : MonoBehaviour
 
     public Text moneyText;
     public static int moneyAmount;
-    int isItemSold;
-    public GameObject item;
+    int isItem1Sold;
+    int isItem2Sold;
+    int isItem3Sold;
+    public GameObject item1;
+    public GameObject item2;
+    public GameObject item3;
 
     // Use this for initialization
 
-      void Start()
+    void Start()
     {
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
         PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
-        isItemSold = PlayerPrefs.GetInt("IsItemSold");
+        isItem1Sold = PlayerPrefs.GetInt("IsItemSold1");
+        isItem2Sold = PlayerPrefs.GetInt("IsItemSold2");
+        isItem3Sold = PlayerPrefs.GetInt("IsItemSold3");
 
-      if (isItemSold == 1)
-          item.SetActive(true);
+        if (isItem1Sold == 1)
+          item1.SetActive(true);
       else
-          item.SetActive(false);
+          item1.SetActive(false);
+
+        if (isItem2Sold == 2)
+            item2.SetActive(true);
+        else
+            item2.SetActive(false);
+
+        if (isItem3Sold == 3)
+            item3.SetActive(true);
+        else
+            item3.SetActive(false);
     }
 
     // Update is called once per frame
      void Update()
     {
         moneyText.text = moneyAmount.ToString();
-
+       
     }
 
     public void gotoStore()
@@ -38,9 +54,21 @@ public class PlantControl : MonoBehaviour
        PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
        
    }
-    public void delete()
+    public void delete1()
     {
        PlayerPrefs.DeleteAll();
-       item.SetActive(false);
+       item1.SetActive(false);
+    }
+
+    public void delete2()
+    {
+        PlayerPrefs.DeleteAll();
+        item2.SetActive(false);
+    }
+
+    public void delete3()
+    {
+        PlayerPrefs.DeleteAll();
+        item3.SetActive(false);
     }
 }

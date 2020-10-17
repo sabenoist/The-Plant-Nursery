@@ -794,6 +794,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1833129882}
+        m_TargetAssemblyTypeName: ShopControl, Assembly-CSharp
+        m_MethodName: buyItem2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &315353528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1086,7 +1098,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1833129882}
         m_TargetAssemblyTypeName: ShopControl, Assembly-CSharp
-        m_MethodName: buyItem
+        m_MethodName: buyItem1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1945,81 +1957,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585185565}
   m_CullTransparentMesh: 0
---- !u!1 &644776450
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 644776451}
-  - component: {fileID: 644776453}
-  - component: {fileID: 644776452}
-  m_Layer: 0
-  m_Name: Sold image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &644776451
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644776450}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1983566813}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.2, y: -183.78}
-  m_SizeDelta: {x: 133.73932, y: 82.42731}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &644776452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644776450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ec8737698a528504b9609fcb91acea60, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &644776453
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644776450}
-  m_CullTransparentMesh: 0
 --- !u!1 &649941443
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,7 +2278,7 @@ GameObject:
   - component: {fileID: 806225448}
   - component: {fileID: 806225447}
   m_Layer: 0
-  m_Name: shopItem (2)
+  m_Name: plant3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3957,7 +3894,7 @@ GameObject:
   - component: {fileID: 1624637705}
   - component: {fileID: 1624637704}
   m_Layer: 0
-  m_Name: shopItem (1)
+  m_Name: plant2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4183,6 +4120,18 @@ MonoBehaviour:
       - m_Target: {fileID: 541391818}
         m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
         m_MethodName: playSellingSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1833129882}
+        m_TargetAssemblyTypeName: ShopControl, Assembly-CSharp
+        m_MethodName: buyItem3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4519,9 +4468,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyAmountText: {fileID: 1702265609}
-  itemPrice: {fileID: 1002746230}
-  soldImage: {fileID: 644776452}
-  buyButton: {fileID: 348800991}
+  itemPrice1: {fileID: 1002746230}
+  itemPrice2: {fileID: 42076539}
+  itemPrice3: {fileID: 1873779938}
+  buyButton1: {fileID: 348800991}
+  buyButton2: {fileID: 315353527}
+  buyButton3: {fileID: 1684637579}
 --- !u!1 &1865600643
 GameObject:
   m_ObjectHideFlags: 0
@@ -4776,7 +4728,6 @@ RectTransform:
   - {fileID: 1652952645}
   - {fileID: 348800990}
   - {fileID: 1002746229}
-  - {fileID: 644776451}
   m_Father: {fileID: 1822408788}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
