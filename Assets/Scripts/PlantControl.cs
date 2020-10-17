@@ -13,16 +13,12 @@ public class PlantControl : MonoBehaviour
     public GameObject item;
 
     // Use this for initialization
-  //  
-    void awake()
-    {
-        PlayerPrefs.SetInt("MoneyAmount", 200);
-    }
+
       void Start()
     {
-        
-      moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
-      isItemSold = PlayerPrefs.GetInt("IsItemSold");
+        moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
+        PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
+        isItemSold = PlayerPrefs.GetInt("IsItemSold");
 
       if (isItemSold == 1)
           item.SetActive(true);
@@ -44,10 +40,7 @@ public class PlantControl : MonoBehaviour
    }
     public void delete()
     {
-
-       // buyButton.gameObject.SetActive(true);
-
-        PlayerPrefs.DeleteAll();
-        item.SetActive(false);
+       PlayerPrefs.DeleteAll();
+       item.SetActive(false);
     }
 }
