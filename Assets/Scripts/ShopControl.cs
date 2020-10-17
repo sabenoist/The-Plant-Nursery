@@ -23,8 +23,9 @@ public class ShopControl : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        if (!PlayerPrefs.HasKey("MoneyAmount")) PlayerPrefs.SetInt("MoneyAmount", 100);
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
-      
+
     }
 
     // Update is called once per frame
@@ -85,17 +86,17 @@ public class ShopControl : MonoBehaviour
 
     public void exitShop()
     {
-       PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
-       
+        PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
+
     }
 
 
     public void resetPlayerPrefs()
     {
         moneyAmount = 100;
-        buyButton1.gameObject.SetActive(true);
-        buyButton2.gameObject.SetActive(true);
-        buyButton3.gameObject.SetActive(true);
+       // buyButton1.gameObject.SetActive(true);
+       // buyButton2.gameObject.SetActive(true);
+       // buyButton3.gameObject.SetActive(true);
         PlayerPrefs.DeleteAll();
     }
 

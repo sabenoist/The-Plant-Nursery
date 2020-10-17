@@ -20,16 +20,16 @@ public class PlantControl : MonoBehaviour
 
     void Start()
     {
+
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
-        PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
         isItem1Sold = PlayerPrefs.GetInt("IsItemSold1");
         isItem2Sold = PlayerPrefs.GetInt("IsItemSold2");
         isItem3Sold = PlayerPrefs.GetInt("IsItemSold3");
 
         if (isItem1Sold == 1)
-          item1.SetActive(true);
-      else
-          item1.SetActive(false);
+            item1.SetActive(true);
+        else
+            item1.SetActive(false);
 
         if (isItem2Sold == 2)
             item2.SetActive(true);
@@ -43,21 +43,21 @@ public class PlantControl : MonoBehaviour
     }
 
     // Update is called once per frame
-     void Update()
+    void Update()
     {
         moneyText.text = moneyAmount.ToString();
-       
+
     }
 
     public void gotoStore()
-   {
-       PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
-       
-   }
+    {
+        PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
+
+    }
     public void delete1()
     {
-       PlayerPrefs.DeleteAll();
-       item1.SetActive(false);
+        PlayerPrefs.DeleteAll();
+        item1.SetActive(false);
     }
 
     public void delete2()
