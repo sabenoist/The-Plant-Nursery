@@ -46,15 +46,18 @@ namespace IPlantInterface.cs
                     i++;
                 }
                 ArrayOfPlants[i] = new Plant { };
-                ArrayOfPlants[i].initiatePlant("Plant_A_" + amountOfPlants, plantType);
+                ArrayOfPlants[i].initiatePlant("Plant_" + amountOfPlants +"_"+ plantType, plantType);
                 amountOfPlants++;
             }       
         }
 
         public void destroyPlant()
         {
-            ArrayOfPlants[activePlant] = null;
-            amountOfPlants--;
+            if(ArrayOfPlants[activePlant] != null)
+            {
+                ArrayOfPlants[activePlant] = null;
+                amountOfPlants--;
+            }
         }
 
         public void selectPlant(int activPlant)
