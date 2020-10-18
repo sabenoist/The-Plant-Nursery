@@ -683,7 +683,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1172188355}
-        m_TargetAssemblyTypeName: ShopControl, Assembly-CSharp
+        m_TargetAssemblyTypeName: ResetGame, Assembly-CSharp
         m_MethodName: resetPlayerPrefs
         m_Mode: 1
         m_Arguments:
@@ -741,16 +741,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1172188349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 615b83d3bbe892e418324807eab0cbfd, type: 3}
+  m_Script: {fileID: 11500000, guid: e8b9a46a4f4fb9448ae55fe4a85c03f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyAmountText: {fileID: 0}
-  itemPrice1: {fileID: 0}
-  itemPrice2: {fileID: 0}
-  itemPrice3: {fileID: 0}
-  buyButton1: {fileID: 0}
-  buyButton2: {fileID: 0}
-  buyButton3: {fileID: 0}
 --- !u!1 &1406726319
 GameObject:
   m_ObjectHideFlags: 0

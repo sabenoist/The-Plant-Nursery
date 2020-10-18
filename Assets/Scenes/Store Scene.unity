@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 42076540}
   - component: {fileID: 42076539}
   m_Layer: 0
-  m_Name: Text
+  m_Name: price2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -454,7 +454,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Flower Pot
 
-    $ 100'
+    $ 150'
 --- !u!222 &156422150
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 315353528}
   - component: {fileID: 315353527}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Button2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 316157490}
   - component: {fileID: 316157489}
   m_Layer: 0
-  m_Name: shopItem (4)
+  m_Name: Flower Pot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1015,7 +1015,7 @@ GameObject:
   - component: {fileID: 348800991}
   - component: {fileID: 348800994}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Button1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1388,7 +1388,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fertilizer $ 50
+  m_Text: Fertilizer $ 150
 --- !u!222 &376384402
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1705,7 +1705,7 @@ GameObject:
   - component: {fileID: 585185568}
   - component: {fileID: 585185567}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Button4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1881,7 +1881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3e187a2854194bf41b944c12731091e0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a0a15875597280408921cacb4de61d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1956,7 +1956,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aeac616679533594d9bbec08f4f23512, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e5cc896fb61b1b8469eb1b7b8327ad27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1986,7 +1986,7 @@ GameObject:
   - component: {fileID: 707159021}
   - component: {fileID: 707159020}
   m_Layer: 0
-  m_Name: shopItem (3)
+  m_Name: Fertilizer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2124,7 +2124,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Watering Can
 
-    $ 100'
+    $ 150'
 --- !u!222 &771580951
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2515,6 +2515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Home
       objectReference: {fileID: 0}
+    - target: {fileID: 71033868744644786, guid: dce9a90223869fa48aecf7a3adadd66a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f2994d2f40af1c747b4187ab21fde6e0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dce9a90223869fa48aecf7a3adadd66a, type: 3}
 --- !u!1 &940757604
@@ -2619,7 +2623,7 @@ GameObject:
   - component: {fileID: 1002746231}
   - component: {fileID: 1002746230}
   m_Layer: 0
-  m_Name: price
+  m_Name: price1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2848,7 +2852,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc0fc9efee6c8a14da9d3f72034bf5b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47101360d3693834481ec9e1b739477a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3033,7 +3037,7 @@ GameObject:
   - component: {fileID: 1379596184}
   - component: {fileID: 1379596183}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Button6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3604,7 +3608,7 @@ GameObject:
   - component: {fileID: 1568362492}
   - component: {fileID: 1568362491}
   m_Layer: 0
-  m_Name: shopItem (5)
+  m_Name: Watering Can
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3805,7 +3809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aeac616679533594d9bbec08f4f23512, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f97d1845c9d85284fb8988edb7aa5dc5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3836,7 +3840,7 @@ GameObject:
   - component: {fileID: 1684637580}
   - component: {fileID: 1684637579}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Button3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4024,7 +4028,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d8e6f29931088614f9ccc5cc93f08da7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac58eb6e0d9e1374a952c30b68848718, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4262,6 +4266,9 @@ MonoBehaviour:
   buyButton1: {fileID: 348800991}
   buyButton2: {fileID: 315353527}
   buyButton3: {fileID: 1684637579}
+  buyButton4: {fileID: 585185567}
+  buyButton5: {fileID: 2126719354}
+  buyButton6: {fileID: 1379596183}
 --- !u!1 &1865600643
 GameObject:
   m_ObjectHideFlags: 0
@@ -4351,7 +4358,7 @@ GameObject:
   - component: {fileID: 1873779939}
   - component: {fileID: 1873779938}
   m_Layer: 0
-  m_Name: Text
+  m_Name: price3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4624,7 +4631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aeac616679533594d9bbec08f4f23512, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 945245fc36b60b245957566743657f9c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4655,7 +4662,7 @@ GameObject:
   - component: {fileID: 2126719355}
   - component: {fileID: 2126719354}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Button5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

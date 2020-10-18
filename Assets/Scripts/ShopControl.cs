@@ -19,6 +19,9 @@ public class ShopControl : MonoBehaviour
     public Button buyButton1;
     public Button buyButton2;
     public Button buyButton3;
+    public Button buyButton4;
+    public Button buyButton5;
+    public Button buyButton6;
 
     // Use this for initialization
     void Start()
@@ -58,6 +61,14 @@ public class ShopControl : MonoBehaviour
         }
         else
             buyButton3.interactable = false;
+
+        if (moneyAmount <=150 )
+        {
+            buyButton4.interactable = false;
+            buyButton5.interactable = false;
+            buyButton6.interactable = false;
+        }
+        
     }
 
     public void buyItem1()
