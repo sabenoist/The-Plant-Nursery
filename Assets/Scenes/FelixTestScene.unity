@@ -383,7 +383,7 @@ MonoBehaviour:
   IconPlantC: {fileID: 21300000, guid: 58172d9d7ebae414299b425438607dcf, type: 3}
   PrefabPlantStagesPlantA:
   - {fileID: 0}
-  - {fileID: 919132149155446097, guid: a90429eb645921040858f00178accf7a, type: 3}
+  - {fileID: 156105073887666519, guid: 3c529a829c3527c4ba87a782b5cb13b1, type: 3}
   - {fileID: 919132149155446097, guid: da1ea6b70b0e52045b7f5adce607639c, type: 3}
   - {fileID: 919132149155446097, guid: c90d5469c69c18f4b84caaec41dbc3cd, type: 3}
   PrefabPlantStagesPlantB:
