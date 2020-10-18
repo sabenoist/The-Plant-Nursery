@@ -4,9 +4,15 @@ using UnityEngine;
 using UnityEngineInternal;
 
 public class MainMenuController : MonoBehaviour {
+    public GameObject waterPrefab;
+    public GameObject fertilizerPrefab;
+    public GameObject potPrefab;
+
+    public int chanceWater = 66;
+    public int chanceFertilizer = 22;
+
     public GameObject mapPrefab;
     public GameObject cameraPrefab;
-    public GameObject waterPrefab;
 
     public Vector3 center;
     public Vector3 size;
@@ -58,7 +64,15 @@ public class MainMenuController : MonoBehaviour {
             pos = center + new Vector3(Random.Range(MapData.player.transform.position.x - size.x / 2, MapData.player.transform.position.x + size.x / 2), 2, Random.Range(MapData.player.transform.position.z - size.z / 2, MapData.player.transform.position.x + size.z / 2));
         } while (Vector3.Distance(pos, MapData.player.transform.position) < minDistanceToPlayer);
 
-        Instantiate(waterPrefab, pos, Quaternion.identity);
+        int randomNumber = Random.Range(1, 100);
+
+        if (randomNumber < chanceWater) {
+            Instantiate(waterPrefab, pos, Quaternion.identity);
+        } else if (randomNumber < chanceFertilizer + chanceWater) {
+            Instantiate(fertilizerPrefab, pos, Quaternion.identity);
+        } else {
+            Instantiate(potPrefab, pos, Quaternion.identity);
+        }
 
         itemCounter++;
     }

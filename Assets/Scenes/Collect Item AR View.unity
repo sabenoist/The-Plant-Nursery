@@ -1111,7 +1111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9047706535070592884, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
       propertyPath: m_Text
-      value: Find water drops around you and click on screen to collect them
+      value: Find the nearby item around you and select it to collect the item.
       objectReference: {fileID: 0}
     - target: {fileID: 9047706535945047120, guid: 2b152186713fcf14c9168836f729aec0, type: 3}
       propertyPath: m_Name
@@ -1233,11 +1233,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4326980432382669348, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}
       propertyPath: m_Name
-      value: Collect Water Drop
+      value: Collect Item
       objectReference: {fileID: 0}
     - target: {fileID: 4486383196326477521, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}
       propertyPath: m_Text
-      value: Collect Water Drop
+      value: Collect Item
       objectReference: {fileID: 0}
     - target: {fileID: 5733119166009238259, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}
       propertyPath: m_LocalPosition.x

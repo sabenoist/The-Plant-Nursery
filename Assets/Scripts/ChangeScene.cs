@@ -13,6 +13,10 @@ public class ChangeScene : MonoBehaviour
 			HideMap();
         }
 
+		if (SceneName.Equals("Collect Item AR View")) {
+			MapData.vrItem = MapData.proximateItem;
+        }
+
 		SceneManager.LoadScene(SceneName);
 	}
 

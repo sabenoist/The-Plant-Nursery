@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MapItemHandler : MonoBehaviour {
+    public string itemType = "none";
+
     public int maxDistance;
     public int minDistance;
 

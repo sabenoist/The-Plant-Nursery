@@ -694,9 +694,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54dc42efbe4ba54c912f13494e9b842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waterPrefab: {fileID: 3830675059964600005, guid: 31bdbc4367dbc0345b3312b2e0be789b, type: 3}
+  fertilizerPrefab: {fileID: 3830675059964600005, guid: 1ebecce69ffbc964cbb1fbdd62600c11, type: 3}
+  potPrefab: {fileID: 3830675059964600005, guid: 2656a24c5f5c35e4aa1d4bf54ab66ed8, type: 3}
+  chanceWater: 66
+  chanceFertilizer: 22
   mapPrefab: {fileID: 7581272532306470002, guid: 78519493e144d8e4e93e5ab294d7d6ca, type: 3}
   cameraPrefab: {fileID: 8583476160735415921, guid: 18efb25e751215544bece176875275f5, type: 3}
-  waterPrefab: {fileID: 3830675059964600005, guid: 31bdbc4367dbc0345b3312b2e0be789b, type: 3}
   center: {x: 0, y: 0, z: 0}
   size: {x: 250, y: 1, z: 250}
   maxItems: 7
