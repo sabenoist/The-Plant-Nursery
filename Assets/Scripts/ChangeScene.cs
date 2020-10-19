@@ -15,7 +15,7 @@ public class ChangeScene : MonoBehaviour
 
 		if (SceneName.Equals("Collect Item AR View")) {
 			MapData.vrItem = MapData.proximateItem;
-        }
+        } 
 
 		SceneManager.LoadScene(SceneName);
 	}
@@ -25,7 +25,6 @@ public class ChangeScene : MonoBehaviour
 			return;
         }
 
-		//MapData.map.SetActive(true);
 		MapData.mapTile.SetActive(true);
 		MapData.player.SetActive(true);
 		MapData.camera.SetActive(true);
@@ -36,7 +35,6 @@ public class ChangeScene : MonoBehaviour
 	}
 
 	public void HideMap() {
-		//MapData.map.SetActive(false);
 		MapData.mapTile.SetActive(false);
 		MapData.player.SetActive(false);
 		MapData.camera.SetActive(false);

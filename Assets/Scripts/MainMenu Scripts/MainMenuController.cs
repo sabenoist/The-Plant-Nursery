@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngineInternal;
 
 public class MainMenuController : MonoBehaviour {
@@ -8,8 +9,8 @@ public class MainMenuController : MonoBehaviour {
     public GameObject fertilizerPrefab;
     public GameObject potPrefab;
 
-    public int chanceWater = 66;
-    public int chanceFertilizer = 22;
+    public int chanceWater = 80;
+    public int chanceFertilizer = 10;
 
     public GameObject mapPrefab;
     public GameObject cameraPrefab;
@@ -55,13 +56,26 @@ public class MainMenuController : MonoBehaviour {
         if (itemCounter < maxItems) {
             Spawn();
         }
+
+        if (MapData.itemCaptured && MapData.vrItem != null) {
+            MapData.itemsOnMap.Remove(MapData.vrItem);
+            itemCounter--;
+
+            if (MapData.proximateItem == MapData.vrItem) {
+                MapData.proximateItem = null;
+            }
+
+            MapData.vrItem.Destroy();
+            MapData.vrItem = null;
+            MapData.itemCaptured = false;
+        }
     }
 
     public void Spawn() {
         Vector3 pos;
 
         do {
-            pos = center + new Vector3(Random.Range(MapData.player.transform.position.x - size.x / 2, MapData.player.transform.position.x + size.x / 2), 2, Random.Range(MapData.player.transform.position.z - size.z / 2, MapData.player.transform.position.x + size.z / 2));
+            pos = center + new Vector3(Random.Range(MapData.player.transform.position.x - size.x / 2, MapData.player.transform.position.x + size.x / 2), 2, Random.Range(MapData.player.transform.position.z - size.z / 2, MapData.player.transform.position.z + size.z / 2));
         } while (Vector3.Distance(pos, MapData.player.transform.position) < minDistanceToPlayer);
 
         int randomNumber = Random.Range(1, 100);
