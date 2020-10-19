@@ -72,7 +72,13 @@ public class lokalPlantHandler: MonoBehaviour
     {
         MotherTree.createGameObject();
     }
-
+    /*
+    public GameObject transfer_createGameObject()
+    {
+        MotherTree.createGameObject();
+        return TreeDM;
+    }
+    */
     /*
      Destroys the GAMEOBJECT in unity.
     */

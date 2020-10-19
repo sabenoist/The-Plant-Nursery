@@ -428,8 +428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa1a5bba90da6d458bf6cdeb5c8f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToSpawn: {fileID: 0}
-  pm: {fileID: 0}
+  ObjectToSpawn: {fileID: 6582829634472349072, guid: 2bab4c2dc05c5e443a026b1883f30ddb, type: 3}
+  pm: {fileID: 1994044043}
 --- !u!4 &995626559
 Transform:
   m_ObjectHideFlags: 0
