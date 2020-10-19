@@ -284,7 +284,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameObjectHandler, Assembly-CSharp
         m_MethodName: selectPlant
         m_Mode: 3
@@ -334,6 +334,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115956648}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
 --- !u!1 &167052655
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +397,8 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: b084a224449acd542ac7df1267d7f494, type: 3}
   - {fileID: 919132149155446097, guid: cee0de0083028b54ca92207f36c56de7, type: 3}
   - {fileID: 919132149155446097, guid: eb46948a09f47bc4faaeea540872c041, type: 3}
+=======
+>>>>>>> 3c58b5d3739ac4dc57a36aaa8c761407730a1f72
 --- !u!1 &176274199
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +481,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameObjectHandler, Assembly-CSharp
         m_MethodName: selectPlant
         m_Mode: 3
@@ -689,7 +692,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameObjectHandler, Assembly-CSharp
         m_MethodName: toString
         m_Mode: 1
@@ -900,7 +903,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: IPlantInterface.cs.GameObjectHandler, Assembly-CSharp
         m_MethodName: createPlant
         m_Mode: 3
@@ -1032,7 +1035,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: IPlantInterface.cs.GameObjectHandler, Assembly-CSharp
         m_MethodName: DestroyGameObject
         m_Mode: 1
@@ -1164,7 +1167,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameObjectHandler, Assembly-CSharp
         m_MethodName: watering
         m_Mode: 1
@@ -1375,7 +1378,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: IPlantInterface.cs.GameObjectHandler, Assembly-CSharp
         m_MethodName: createGameObject
         m_Mode: 1
@@ -1570,6 +1573,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231404068}
   m_CullTransparentMesh: 0
+--- !u!1 &1271977207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1271977210}
+  - component: {fileID: 1271977209}
+  - component: {fileID: 1271977208}
+  m_Layer: 0
+  m_Name: MotherTree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1271977208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271977207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed1a811460afaa40bc0d3b67144372a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activePlant: 0
+  IconPlantA: {fileID: 21300000, guid: f97d1845c9d85284fb8988edb7aa5dc5, type: 3}
+  IconPlantB: {fileID: 21300000, guid: e5cc896fb61b1b8469eb1b7b8327ad27, type: 3}
+  IconPlantC: {fileID: 21300000, guid: 945245fc36b60b245957566743657f9c, type: 3}
+  PrefabPlantStagesPlantA:
+  - {fileID: 0}
+  - {fileID: 919132149155446097, guid: a90429eb645921040858f00178accf7a, type: 3}
+  - {fileID: 919132149155446097, guid: da1ea6b70b0e52045b7f5adce607639c, type: 3}
+  - {fileID: 919132149155446097, guid: c90d5469c69c18f4b84caaec41dbc3cd, type: 3}
+  PrefabPlantStagesPlantB:
+  - {fileID: 0}
+  - {fileID: 919132149155446097, guid: daab84ab9578e61448d0ee789830d70a, type: 3}
+  - {fileID: 919132149155446097, guid: 777e413c85ad5eb468bf4c7efd8f2294, type: 3}
+  - {fileID: 919132149155446097, guid: 4a2efcab67036194780fd7ffd7f7c7f6, type: 3}
+  PrefabPlantStagesPlantC:
+  - {fileID: 0}
+  - {fileID: 919132149155446097, guid: b084a224449acd542ac7df1267d7f494, type: 3}
+  - {fileID: 919132149155446097, guid: cee0de0083028b54ca92207f36c56de7, type: 3}
+  - {fileID: 919132149155446097, guid: eb46948a09f47bc4faaeea540872c041, type: 3}
+--- !u!114 &1271977209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271977207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e16982ffb393afd4c8a36e34e5562b10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1271977210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271977207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1323002499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,7 +2050,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameObjectHandler, Assembly-CSharp
         m_MethodName: selectPlant
         m_Mode: 3
@@ -2113,6 +2191,7 @@ GameObject:
   - component: {fileID: 1639432515}
   - component: {fileID: 1639432514}
   - component: {fileID: 1639432513}
+  - component: {fileID: 1639432517}
   m_Layer: 5
   m_Name: Buttons
   m_TagString: Untagged
@@ -2211,6 +2290,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1639432517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639432512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ac79d8d5d9034a9bf4cd3eb01378d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1639709368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2372,10 +2463,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
-        m_TargetAssemblyTypeName: IPlantInterface.cs.GameObjectHandler, Assembly-CSharp
-        m_MethodName: createPlant
-        m_Mode: 3
+      - m_Target: {fileID: 1639432517}
+        m_TargetAssemblyTypeName: Test, Assembly-CSharp
+        m_MethodName: testFunktion
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2583,7 +2674,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameObjectHandler, Assembly-CSharp
         m_MethodName: dryening
         m_Mode: 1
@@ -2794,7 +2885,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: IPlantInterface.cs.GameObjectHandler, Assembly-CSharp
         m_MethodName: createPlant
         m_Mode: 3
@@ -2926,7 +3017,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 167052657}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: IPlantInterface.cs.GameObjectHandler, Assembly-CSharp
         m_MethodName: destroyPlant
         m_Mode: 1

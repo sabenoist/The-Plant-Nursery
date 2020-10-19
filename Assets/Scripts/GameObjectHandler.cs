@@ -9,7 +9,12 @@ namespace IPlantInterface.cs
 
     public class GameObjectHandler : MonoBehaviour
     {
- 
+        public static GameObjectHandler Instance
+        {
+            get;
+            set;
+        }
+
         private int amountOfPlants = 0;
         public int activePlant;
 
