@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ShopControl : MonoBehaviour
 {
-
+    private GameObjectHandler MotherTree;
     int moneyAmount;
     int isItemSold1;
     int isItemSold2;
@@ -26,6 +26,7 @@ public class ShopControl : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         if (!PlayerPrefs.HasKey("MoneyAmount")) PlayerPrefs.SetInt("MoneyAmount", 100);
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
 
@@ -77,6 +78,7 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold1", 1);
         itemPrice1.text = "Sold!";
         buyButton1.gameObject.SetActive(false);
+        MotherTree.createPlant(plantType1);
     }
 
     public void buyItem2()
