@@ -26,6 +26,7 @@ namespace IPlantInterface.cs
         public GameObject[] PrefabPlantStagesPlantB;
         public GameObject[] PrefabPlantStagesPlantC;
         IPI[] ArrayOfPlants;
+        //private GameObject TreeDM;
         private GameObject TreeDM;
 
         // Start is called before the first frame update
