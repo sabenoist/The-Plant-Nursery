@@ -6,6 +6,7 @@ using IPlantInterface.cs;
 
 public class SpawnPlantManager : MonoBehaviour
 {
+    //private GameObjectHandler MotherTree;
     public GameObject ObjectToSpawn;
     public PlacementManager pm;
    
@@ -14,7 +15,10 @@ public class SpawnPlantManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        //ObjectToSpawn = MotherTree.transfer_createGameObject();
         pm = FindObjectOfType<PlacementManager>();
+    
       //  MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
     }
 
@@ -24,7 +28,7 @@ public class SpawnPlantManager : MonoBehaviour
        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
        {
            
-          GameObject visual = Instantiate(ObjectToSpawn,pm.transform.position, pm.transform.rotation);
+          GameObject visual = Instantiate(ObjectToSpawn, pm.transform.position, pm.transform.rotation);
        }
     }
 }
