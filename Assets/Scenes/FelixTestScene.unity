@@ -384,8 +384,8 @@ MonoBehaviour:
   PrefabPlantStagesPlantA:
   - {fileID: 0}
   - {fileID: 156105073887666519, guid: 3c529a829c3527c4ba87a782b5cb13b1, type: 3}
-  - {fileID: 919132149155446097, guid: da1ea6b70b0e52045b7f5adce607639c, type: 3}
-  - {fileID: 919132149155446097, guid: c90d5469c69c18f4b84caaec41dbc3cd, type: 3}
+  - {fileID: 8357278441291822917, guid: d1545f67013b70e4780761b5e7a55cc0, type: 3}
+  - {fileID: 6582829634472349072, guid: 2bab4c2dc05c5e443a026b1883f30ddb, type: 3}
   PrefabPlantStagesPlantB:
   - {fileID: 0}
   - {fileID: 919132149155446097, guid: daab84ab9578e61448d0ee789830d70a, type: 3}
