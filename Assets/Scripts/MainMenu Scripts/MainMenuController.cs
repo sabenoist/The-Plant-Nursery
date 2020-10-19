@@ -68,6 +68,8 @@ public class MainMenuController : MonoBehaviour {
             MapData.vrItem.Destroy();
             MapData.vrItem = null;
             MapData.itemCaptured = false;
+        } else if (MapData.itemCaptured) {
+            MapData.itemCaptured = false;
         }
     }
 
