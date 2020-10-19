@@ -302,23 +302,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651333205}
   m_CullTransparentMesh: 0
---- !u!1 &672723337 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8375799834759110514, guid: b826e78a5f18d0745884e4530386c421, type: 3}
-  m_PrefabInstance: {fileID: 8412879683730286744}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &672723338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672723337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b467704efe182540a5982f777000545, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &746203783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,26 +1611,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
-      propertyPath: m_Transition
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
-      propertyPath: m_SpriteState.m_HighlightedSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a0df15383091d4e40b74aa6a1954509c, type: 3}
-    - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
-      propertyPath: m_SpriteState.m_PressedSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a0df15383091d4e40b74aa6a1954509c, type: 3}
-    - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
-      propertyPath: m_SpriteState.m_SelectedSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a0df15383091d4e40b74aa6a1954509c, type: 3}
-    - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 917cb887de0934c4da93719c80719714, type: 3}
     - target: {fileID: 8375799834759110517, guid: b826e78a5f18d0745884e4530386c421, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1732,9 +1695,5 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8375799834759110519, guid: b826e78a5f18d0745884e4530386c421, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a0df15383091d4e40b74aa6a1954509c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b826e78a5f18d0745884e4530386c421, type: 3}
