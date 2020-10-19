@@ -79,7 +79,8 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold1", 1);
         itemPrice1.text = "Sold!";
         buyButton1.gameObject.SetActive(false);
-        //MotherTree.createPlant(plantType1);
+
+        MotherTree.createPlant(1);
     }
 
     public void buyItem2()
@@ -88,6 +89,7 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold2", 2);
         itemPrice2.text = "Sold!";
         buyButton2.gameObject.SetActive(false);
+        MotherTree.createPlant(2);
     }
 
     public void buyItem3()
@@ -96,6 +98,7 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold3", 3);
         itemPrice3.text = "Sold!";
         buyButton3.gameObject.SetActive(false);
+        MotherTree.createPlant(3);
     }
 
     public void exitShop()

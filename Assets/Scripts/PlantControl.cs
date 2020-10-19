@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using IPlantInterface.cs;
 
 public class PlantControl : MonoBehaviour
 {
+    private GameObjectHandler MotherTree;
 
     public Text moneyText;
     public static int moneyAmount;
@@ -20,6 +22,7 @@ public class PlantControl : MonoBehaviour
 
     void Start()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
 
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
         isItem1Sold = PlayerPrefs.GetInt("IsItemSold1");
@@ -70,5 +73,20 @@ public class PlantControl : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         item3.SetActive(false);
+    }
+
+    public void selectPlant1()
+    {
+        MotherTree.selectPlant(1);
+    }
+
+    public void selectPlant2()
+    {
+        MotherTree.selectPlant(2);
+    }
+
+    public void selectPlant3()
+    {
+        MotherTree.selectPlant(3);
     }
 }
