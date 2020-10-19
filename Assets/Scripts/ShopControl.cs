@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using IPlantInterface.cs;
 
 public class ShopControl : MonoBehaviour
 {
@@ -78,7 +79,7 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold1", 1);
         itemPrice1.text = "Sold!";
         buyButton1.gameObject.SetActive(false);
-        MotherTree.createPlant(plantType1);
+        //MotherTree.createPlant(plantType1);
     }
 
     public void buyItem2()
