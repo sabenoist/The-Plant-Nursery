@@ -11,19 +11,19 @@ public class Item {
         amount = 1;
     }
 
-    public string getName() {
+    public string GetName() {
         return name;
     }
 
-    public int getAmount() {
+    public int GetAmount() {
         return amount;
     }
 
-    public void increaseAmount(int increase) {
+    public void IncreaseAmount(int increase) {
         amount += increase;
     }
 
-    public void decreaseAmount(int decrease) {
+    public void DecreaseAmount(int decrease) {
         amount -= decrease;
 
         if (amount < 1) {

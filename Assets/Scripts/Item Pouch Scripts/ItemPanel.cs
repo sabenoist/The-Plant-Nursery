@@ -15,27 +15,32 @@ public class ItemPanel : MonoBehaviour {
     Item item;
 
     void Start() {
+    }
+
+    public void InitItem(Item data) {
         image = gameObject.transform.GetChild(0).gameObject.GetComponent<Image>();
         itemName = gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
         amount = gameObject.transform.GetChild(2).gameObject.GetComponent<Text>();
+
+        SetItem(data);
     }
 
-    public void setItem(Item data) {
+    public void SetItem(Item data) {
         item = data;
 
-        itemName.text = data.getName();
-        amount.text = data.getAmount().ToString();
+        itemName.text = data.GetName();
+        amount.text = data.GetAmount().ToString();
 
-        if (data.getName().Equals("water")) {
+        if (data.GetName().Equals("water")) {
             image.sprite = waterSprite;
-        } else if (data.getName().Equals("fertilizer")) {
+        } else if (data.GetName().Equals("fertilizer")) {
             image.sprite = fertilizerSprite;
-        } else if (data.getName().Equals("pot")) {
+        } else if (data.GetName().Equals("pot")) {
             image.sprite = potSprite;
         }
     }
 
-    public void itemClicked() {
+    public void ItemClicked() {
         ItemPouchData.selectedItem = item;
     }
 }

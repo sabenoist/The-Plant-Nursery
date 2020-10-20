@@ -13,13 +13,13 @@ public static class ItemPouchData {
         if (item == null) {
             createItem(name);
         } else {
-            item.increaseAmount(1);
+            item.IncreaseAmount(1);
         }
     }
 
     public static Item findItem(string name) {
         foreach (Item item in items) {
-            if (item.getName().Equals(name)) {
+            if (item.GetName().Equals(name)) {
                 return item;
             }
         }
