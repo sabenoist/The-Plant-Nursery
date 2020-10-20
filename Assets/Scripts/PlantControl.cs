@@ -14,36 +14,87 @@ public class PlantControl : MonoBehaviour
     int isItem1Sold;
     int isItem2Sold;
     int isItem3Sold;
-    public GameObject item1;
-    public GameObject item2;
-    public GameObject item3;
+   
+    public GameObject[] IconsPlantA;
+    public GameObject[] IconsPlantB;
+    public GameObject[] IconsPlantC;
+
+    public GameObject[] StatusPlantA;
+    public GameObject[] StatusPlantB;
+    public GameObject[] StatusPlantC;
+
+    public GameObject[] WaterPlantA;
+    public GameObject[] WaterPlantB;
+    public GameObject[] WaterPlantC;
+
+    private lokalPlantHandler LocalPlantHandler;
 
     // Use this for initialization
 
     void Start()
     {
-       // MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        LocalPlantHandler = GameObject.Find("LokalPlantHandlerGO").GetComponent<lokalPlantHandler>();
+        for (int i = 0; i < 3; i++)
+        {
+            IconsPlantA[i].SetActive(false);
+            IconsPlantB[i].SetActive(false);
+            IconsPlantC[i].SetActive(false);
+
+            StatusPlantA[i].SetActive(false);
+            StatusPlantB[i].SetActive(false);
+            StatusPlantC[i].SetActive(false);
+
+      
+        }
+
+        WaterPlantA[0].SetActive(false);
+        WaterPlantB[0].SetActive(false);
+        WaterPlantC[0].SetActive(false);
+
+        WaterPlantA[1].SetActive(false);
+        WaterPlantB[1].SetActive(false);
+        WaterPlantC[1].SetActive(false);
+
+        for (int i = 0; i < 3; i++)
+        {
+            LocalPlantHandler.selectPlant(i);
+            int plantType = LocalPlantHandler.getPlantType();
+            int skin = LocalPlantHandler.getSkin();
+
+            if (i == 0)
+            {
+                IconsPlantA[plantType].SetActive(true);
+                StatusPlantA[skin-1].SetActive(true);
+                WaterPlantA[0].SetActive(!LocalPlantHandler.isThirstyFunction());
+                WaterPlantA[1].SetActive(LocalPlantHandler.isThirstyFunction());
+            }
+
+            if (i == 1)
+            {
+                IconsPlantB[plantType].SetActive(true);
+                StatusPlantB[skin-1].SetActive(true);
+                WaterPlantB[0].SetActive(!LocalPlantHandler.isThirstyFunction());
+                WaterPlantB[1].SetActive(LocalPlantHandler.isThirstyFunction());
+            }
+
+            if (i == 2)
+            {
+                IconsPlantC[plantType].SetActive(true);
+                StatusPlantC[skin-1].SetActive(true);
+                WaterPlantC[0].SetActive(!LocalPlantHandler.isThirstyFunction());
+                WaterPlantC[1].SetActive(LocalPlantHandler.isThirstyFunction());
+            }
+        }
+    
+
 
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
         isItem1Sold = PlayerPrefs.GetInt("IsItemSold1");
         isItem2Sold = PlayerPrefs.GetInt("IsItemSold2");
         isItem3Sold = PlayerPrefs.GetInt("IsItemSold3");
 
-        if (isItem1Sold == 1)
-            item1.SetActive(true);
-        else
-            item1.SetActive(false);
-
-        if (isItem2Sold == 2)
-            item2.SetActive(true);
-        else
-            item2.SetActive(false);
-
-        if (isItem3Sold == 3)
-            item3.SetActive(true);
-        else
-            item3.SetActive(false);
     }
+
 
     // Update is called once per frame
     void Update()
@@ -57,13 +108,25 @@ public class PlantControl : MonoBehaviour
         PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
 
     }
-    public void delete1()
+    
+    public void delete0()
     {
-        PlayerPrefs.DeleteAll();
-        item1.SetActive(false);
+        LocalPlantHandler = GameObject.Find("LokalPlantHandlerGO").GetComponent<lokalPlantHandler>();
+        LocalPlantHandler.selectPlant(0);
+        int plantType = LocalPlantHandler.getPlantType();
+        int skin = LocalPlantHandler.getSkin();
+        IconsPlantA[plantType].SetActive(false);
+        StatusPlantA[skin-1].SetActive(false);
+        WaterPlantA[0].SetActive(false);
+        WaterPlantA[1].SetActive(false);
+        LocalPlantHandler.destroyPlant();
+
+        PlayerPrefs.DeleteAll(); 
+
+
     }
 
-    public void delete2()
+   /* public void delete2()
     {
         PlayerPrefs.DeleteAll();
         item2.SetActive(false);
@@ -74,22 +137,6 @@ public class PlantControl : MonoBehaviour
         PlayerPrefs.DeleteAll();
         item3.SetActive(false);
     }
-
-    public void selectPlant1()
-    {
-        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
-        MotherTree.selectPlant(1);
-    }
-
-    public void selectPlant2()
-    {
-        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
-        MotherTree.selectPlant(2);
-    }
-
-    public void selectPlant3()
-    {
-        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
-        MotherTree.selectPlant(3);
-    }
+    */
+    
 }

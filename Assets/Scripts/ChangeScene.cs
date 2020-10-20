@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-	public void changeScene(string SceneName)
+    private lokalPlantHandler LocalPlantHandler;
+
+    public void changeScene(string SceneName)
 	{
 		if (SceneName.Equals("Main Menu")) {
 			ShowMap();
@@ -20,7 +22,16 @@ public class ChangeScene : MonoBehaviour
 		SceneManager.LoadScene(SceneName);
 	}
 
-	public void ShowMap() {
+    public void changeSceneToAR(int activePlant)
+    {
+        LocalPlantHandler = GameObject.Find("LokalPlantHandlerGO").GetComponent<lokalPlantHandler>();
+        LocalPlantHandler.selectPlant(activePlant);
+        SceneManager.LoadScene("AR Plant Scene");
+
+
+    }
+
+    public void ShowMap() {
 		if (MapData.map == null || MapData.camera == null) {
 			return;
         }

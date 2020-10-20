@@ -30,7 +30,7 @@ public class ShopControl : MonoBehaviour
     void Start()
     {
        // MotherTree= GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
-        if (!PlayerPrefs.HasKey("MoneyAmount")) PlayerPrefs.SetInt("MoneyAmount", 150);
+        if (!PlayerPrefs.HasKey("MoneyAmount")) PlayerPrefs.SetInt("MoneyAmount", 500);
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
 
     }
@@ -107,7 +107,7 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold3", 3);
         itemPrice3.text = "Sold!";
         buyButton3.gameObject.SetActive(false);
-       // MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        LocalPlantHandler = GameObject.Find("test").GetComponent<lokalPlantHandler>();
         LocalPlantHandler.createPlant(3);
     }
 

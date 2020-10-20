@@ -45,7 +45,7 @@ public class lokalPlantHandler: MonoBehaviour
     public void selectPlant(int activPlant)
     {
         MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
-        MotherTree.selectPlant(activPlant-1);
+        MotherTree.selectPlant(activPlant);
     }
     /*
      Waters the active plant.
@@ -64,6 +64,13 @@ public class lokalPlantHandler: MonoBehaviour
         MotherTree.dryening();
     }
 
+    public bool isThirstyFunction()
+    {
+        return MotherTree.isThirstyFunction();
+
+    }
+
+
     /*
      Returns the water lvl 0 to 100 %.
     */
@@ -74,12 +81,20 @@ public class lokalPlantHandler: MonoBehaviour
     }
     public int getPlantType()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         return MotherTree.getPlantType();
     }
 
     public int getLevel()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         return MotherTree.getLevel();
+    }
+
+    public int getSkin()
+    {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        return MotherTree.getSkin();
     }
 
     /*

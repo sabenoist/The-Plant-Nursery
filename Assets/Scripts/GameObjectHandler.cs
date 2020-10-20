@@ -90,6 +90,11 @@ namespace IPlantInterface.cs
             }
         }
 
+        public bool isThirstyFunction()
+        {
+            return ArrayOfPlants[activePlant].isThirstyFunction();
+        }
+
         public int getWaterLevel()
         {
             return (ArrayOfPlants[activePlant].getMoisturised() * 10);
@@ -116,12 +121,19 @@ namespace IPlantInterface.cs
 
         public int getPlantType()
         {
+            Debug.LogWarning("activePlant = " + activePlant);
             return ArrayOfPlants[activePlant].getPlantType();
+
         }
 
         public int getLevel()
         {
             return ArrayOfPlants[activePlant].getLevel();
+        }
+
+        public int getSkin()
+        {
+            return ArrayOfPlants[activePlant].getSkin();
         }
 
         public void DestroyGameObject()

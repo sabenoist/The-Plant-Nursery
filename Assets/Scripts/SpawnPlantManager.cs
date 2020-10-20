@@ -20,22 +20,23 @@ public class SpawnPlantManager : MonoBehaviour
     void Start()
     {
         LocalPlantHandler = GameObject.Find("LokalPlantHandlerGO").GetComponent<lokalPlantHandler>();
+        
         int plantType = LocalPlantHandler.getPlantType();
-        int level = LocalPlantHandler.getLevel();
+        int skin = LocalPlantHandler.getSkin();
         Debug.LogWarning("plantType = " + plantType);
-        Debug.LogWarning("level= " + level);
+        Debug.LogWarning("level= " + skin);
 
         if (plantType == 1)
         {
-            ObjectToSpawn = PrefabPlantStagesPlantA[level];
+            ObjectToSpawn = PrefabPlantStagesPlantA[skin];
         }
         if (plantType == 2)
         {
-            ObjectToSpawn = PrefabPlantStagesPlantB[level];
+            ObjectToSpawn = PrefabPlantStagesPlantB[skin];
         }
         if (plantType == 3)
         {
-            ObjectToSpawn = PrefabPlantStagesPlantC[level];
+            ObjectToSpawn = PrefabPlantStagesPlantC[skin];
         }
         //  MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         //ObjectToSpawn = MotherTree.transfer_createGameObject();
