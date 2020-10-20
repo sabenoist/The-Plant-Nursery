@@ -12,7 +12,7 @@ public class ARItemHandler : MonoBehaviour {
     public void itemTapped() {
         MapData.itemCaptured = true;
 
-        ItemPouchData.createItem(type);
+        ItemPouchData.addItem(type);
 
         gameObject.Destroy();
     }
