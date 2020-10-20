@@ -30,9 +30,11 @@ public class ARItemSpawn : MonoBehaviour {
             GameObject water = Instantiate(waterPrefab, pos, Quaternion.identity);
             water.transform.Rotate(-90, 0, 0);
         } else if (type == "fertilizer") {
-            Instantiate(fertilizerPrefab, pos, Quaternion.identity);
+            GameObject fertilizer = Instantiate(fertilizerPrefab, pos, Quaternion.identity);
+            fertilizer.transform.Rotate(20, 20, 0);
         } else if (type == "pot") {
-            Instantiate(potPrefab, pos, Quaternion.identity);
+            GameObject pot = Instantiate(potPrefab, pos, Quaternion.identity);
+            pot.transform.Rotate(-90, 0, 0);
         }
     }
 }
