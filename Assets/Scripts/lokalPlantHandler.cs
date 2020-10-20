@@ -10,7 +10,7 @@ public class lokalPlantHandler: MonoBehaviour
     // Start is called before the first frame update.
     void Start()
     {
-        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+       // MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
     }
 
     // Update is called once per frame.
