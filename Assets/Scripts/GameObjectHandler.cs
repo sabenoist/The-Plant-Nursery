@@ -119,6 +119,10 @@ namespace IPlantInterface.cs
             }
         }
 
+        public bool plantExists() {
+            return ArrayOfPlants[activePlant] != null;
+        }
+
         public int getPlantType()
         {
             Debug.LogWarning("activePlant = " + activePlant);

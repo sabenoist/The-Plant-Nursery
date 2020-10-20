@@ -1,5 +1,6 @@
 ﻿using IPlantInterface.cs;
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 //using UnityEditor.Rendering;
@@ -128,6 +129,11 @@ public class lokalPlantHandler: MonoBehaviour
     {
         MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.toString();
+    }
+
+    public bool plantExists() {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        return (MotherTree.plantExists());
     }
 }
 

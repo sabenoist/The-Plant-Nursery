@@ -33,6 +33,8 @@ public class PlantControl : MonoBehaviour
 
     void Start()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+
         LocalPlantHandler = GameObject.Find("LokalPlantHandlerGO").GetComponent<lokalPlantHandler>();
         for (int i = 0; i < 3; i++)
         {
@@ -58,6 +60,11 @@ public class PlantControl : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             LocalPlantHandler.selectPlant(i);
+
+            if (!LocalPlantHandler.plantExists()) {
+                break;
+            }
+
             int plantType = LocalPlantHandler.getPlantType();
             int skin = LocalPlantHandler.getSkin();
 
