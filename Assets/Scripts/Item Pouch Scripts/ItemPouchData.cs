@@ -5,6 +5,7 @@ using UnityEngine;
 
 public static class ItemPouchData {
     public static List<Item> items = new List<Item>();
+    public static Item selectedItem = null;
 
     public static void addItem(string name) {
         Item item = findItem(name);

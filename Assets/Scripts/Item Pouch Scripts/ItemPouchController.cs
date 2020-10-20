@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemPouchController : MonoBehaviour
-{
-    public Sprite waterSprite;
-    public Sprite fertilzerSprite;
-    public Sprite potSprite;
+public class ItemPouchController : MonoBehaviour {
+    GameObject itemPanelPrefab;
 
     void Start() {
-        int x;
-        int y;
+        GameObject items = GameObject.Find("Items Panel");
 
         foreach (Item item in ItemPouchData.items) {
-            
+            GameObject panel = Instantiate(itemPanelPrefab);
+            panel.transform.SetParent(items.transform);
+
+            ItemPanel itemScript = (ItemPanel)panel.GetComponent(typeof(ItemPanel));
+            itemScript.setItem(item);
+
+            Debug.LogWarning("created item " + item.getName() + "!");
         }
     }
 
