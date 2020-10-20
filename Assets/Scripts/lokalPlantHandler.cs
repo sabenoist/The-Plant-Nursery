@@ -1,4 +1,5 @@
 ﻿using IPlantInterface.cs;
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 //using UnityEditor.Rendering;
@@ -63,6 +64,15 @@ public class lokalPlantHandler: MonoBehaviour
     public int getWaterLevel()
     {
         return MotherTree.getWaterLevel();
+    }
+    public int getPlantType()
+    {
+        return MotherTree.getPlantType();
+    }
+
+    public int getLevel()
+    {
+        return MotherTree.getLevel();
     }
 
     /*

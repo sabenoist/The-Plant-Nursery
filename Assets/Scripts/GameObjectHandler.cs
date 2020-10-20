@@ -112,7 +112,17 @@ namespace IPlantInterface.cs
                 TreeDM = Instantiate(PrefabPlantStagesPlantC[skin]);
             }
         }
-        
+
+        public int getPlantType()
+        {
+            return ArrayOfPlants[activePlant].getPlantType();
+        }
+
+        public int getLevel()
+        {
+            return ArrayOfPlants[activePlant].getLevel();
+        }
+
         public void DestroyGameObject()
         {
             Destroy(TreeDM);
