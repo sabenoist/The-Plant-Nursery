@@ -29,4 +29,12 @@ public static class ItemPouchData {
         Item newItem = new Item(name);
         items.Add(newItem);
     }
+
+    public static void deleteItem(string name) {
+        Item item = findItem(name);
+
+        if (item != null) {
+            items.Remove(item);
+        }
+    }
 }
