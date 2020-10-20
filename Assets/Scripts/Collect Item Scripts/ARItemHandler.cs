@@ -13,4 +13,13 @@ public class ARItemHandler : MonoBehaviour {
     void Update() {
         
     }
+
+    public void itemTapped() {
+        MapData.itemCaptured = true;
+
+        //create item for item menu here
+        Debug.LogWarning(type + " was tapped!");
+
+        gameObject.Destroy();
+    }
 }

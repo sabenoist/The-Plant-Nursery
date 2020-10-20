@@ -715,7 +715,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plants
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3262502454997897827, guid: d93f6d36e32f26e4b96e665919ee5f60, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d93f6d36e32f26e4b96e665919ee5f60, type: 3}
 --- !u!224 &595345600 stripped
 RectTransform:
@@ -874,7 +875,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726790907}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 1.19, y: 7.28, z: 0.43}
+  m_LocalPosition: {x: -0.3, y: 5.01, z: 4.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1513,8 +1514,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667438399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
-  m_LocalScale: {x: 14, y: 10, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 19}
+  m_LocalScale: {x: 14, y: 10, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -1534,7 +1535,8 @@ MonoBehaviour:
   waterPrefab: {fileID: 7015919433716463835, guid: 74491406d6b66394bad88add78da3592, type: 3}
   fertilizerPrefab: {fileID: 2180331137148763077, guid: 9118e21c0f8d60840b22a2a4e4e02c59, type: 3}
   potPrefab: {fileID: 5540637470987366087, guid: e5a2ea505b9cb864194090e886c06255, type: 3}
-  size: {x: 14, y: 10, z: 3}
+  size: {x: 1, y: 1, z: 1}
+  center: {x: 0, y: 0, z: 0}
 --- !u!1 &1734114275
 GameObject:
   m_ObjectHideFlags: 0

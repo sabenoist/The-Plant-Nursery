@@ -123,6 +123,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &115547021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8375799834759110514, guid: b826e78a5f18d0745884e4530386c421, type: 3}
+  m_PrefabInstance: {fileID: 8412879683730286744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &115547022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115547021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b467704efe182540a5982f777000545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &239717113
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,8 +714,8 @@ MonoBehaviour:
   waterPrefab: {fileID: 3830675059964600005, guid: 31bdbc4367dbc0345b3312b2e0be789b, type: 3}
   fertilizerPrefab: {fileID: 3830675059964600005, guid: 1ebecce69ffbc964cbb1fbdd62600c11, type: 3}
   potPrefab: {fileID: 3830675059964600005, guid: 2656a24c5f5c35e4aa1d4bf54ab66ed8, type: 3}
-  chanceWater: 66
-  chanceFertilizer: 22
+  chanceWater: 80
+  chanceFertilizer: 10
   mapPrefab: {fileID: 7581272532306470002, guid: 78519493e144d8e4e93e5ab294d7d6ca, type: 3}
   cameraPrefab: {fileID: 8583476160735415921, guid: 18efb25e751215544bece176875275f5, type: 3}
   center: {x: 0, y: 0, z: 0}
@@ -1611,6 +1628,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c3a099a17fd3ca4e896c4b6c0b80f00, type: 3}
+    - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 917cb887de0934c4da93719c80719714, type: 3}
+    - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 917cb887de0934c4da93719c80719714, type: 3}
+    - target: {fileID: 8375799834759110516, guid: b826e78a5f18d0745884e4530386c421, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 917cb887de0934c4da93719c80719714, type: 3}
     - target: {fileID: 8375799834759110517, guid: b826e78a5f18d0745884e4530386c421, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
