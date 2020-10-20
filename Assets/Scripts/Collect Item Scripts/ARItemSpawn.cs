@@ -26,13 +26,13 @@ public class ARItemSpawn : MonoBehaviour {
         Vector3 pos = center + new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), Random.Range(18, 20));
 
 
-        if (type == "water") {
+        if (type == "Water") {
             GameObject water = Instantiate(waterPrefab, pos, Quaternion.identity);
             water.transform.Rotate(-90, 0, 0);
-        } else if (type == "fertilizer") {
+        } else if (type == "Fertilizer") {
             GameObject fertilizer = Instantiate(fertilizerPrefab, pos, Quaternion.identity);
             fertilizer.transform.Rotate(20, 20, 0);
-        } else if (type == "pot") {
+        } else if (type == "Plant Pot") {
             GameObject pot = Instantiate(potPrefab, pos, Quaternion.identity);
             pot.transform.Rotate(-90, 0, 0);
         }

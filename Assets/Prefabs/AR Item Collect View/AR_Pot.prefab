@@ -110,7 +110,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  type: pot
+  type: Plant Pot
 --- !u!65 &3227758190385979198
 BoxCollider:
   m_ObjectHideFlags: 0

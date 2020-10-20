@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Start Scene.unity
     guid: bb17fd87ced389343af23b6a1e9d9125
   - enabled: 1
-    path: Assets/Scenes/Item Scene_Fertilizer.unity
+    path: Assets/Scenes/Item Scene.unity
     guid: 7a53974e5e44a534c9aa1468094142fa
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity

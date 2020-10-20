@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f794b464accf840801790bd7718dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: fertilizer
+  itemType: Fertilizer
   maxDistance: 50
   minDistance: 8
   proximateItemMarkerPrefab: {fileID: 3141031845338234685, guid: 46a092da1af87d24090ec7b63d0d7fa2, type: 3}

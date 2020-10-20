@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ItemPanel : MonoBehaviour {
     public Sprite waterSprite;
@@ -31,16 +32,18 @@ public class ItemPanel : MonoBehaviour {
         itemName.text = data.GetName();
         amount.text = data.GetAmount().ToString();
 
-        if (data.GetName().Equals("water")) {
+        if (data.GetName().Equals("Water")) {
             image.sprite = waterSprite;
-        } else if (data.GetName().Equals("fertilizer")) {
+        } else if (data.GetName().Equals("Fertilizer")) {
             image.sprite = fertilizerSprite;
-        } else if (data.GetName().Equals("pot")) {
+        } else if (data.GetName().Equals("Plant Pot")) {
             image.sprite = potSprite;
         }
     }
 
     public void ItemClicked() {
         ItemPouchData.selectedItem = item;
+
+        SceneManager.LoadScene("Item Scene");
     }
 }
