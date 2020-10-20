@@ -11,6 +11,7 @@ public static class ItemPouchData {
 
         if (item == null) {
             createItem(name);
+        } else {
             item.increaseAmount(1);
         }
     }
