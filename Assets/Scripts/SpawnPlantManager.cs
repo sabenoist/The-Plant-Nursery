@@ -6,18 +6,40 @@ using IPlantInterface.cs;
 
 public class SpawnPlantManager : MonoBehaviour
 {
-  //  private GameObjectHandler MotherTree;
+    private lokalPlantHandler LocalPlantHandler;
     public GameObject ObjectToSpawn;
     public PlacementManager pm;
-   
-  
+    public GameObject[] PrefabPlantStagesPlantA;
+    public GameObject[] PrefabPlantStagesPlantB;
+    public GameObject[] PrefabPlantStagesPlantC;
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-      //  MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        LocalPlantHandler = GameObject.Find("LokalPlantHandlerGO").GetComponent<lokalPlantHandler>();
+        int plantType = LocalPlantHandler.getPlantType();
+        int level = LocalPlantHandler.getLevel();
+        Debug.LogWarning("plantType = " + plantType);
+        Debug.LogWarning("level= " + level);
+
+        if (plantType == 1)
+        {
+            ObjectToSpawn = PrefabPlantStagesPlantA[level];
+        }
+        if (plantType == 2)
+        {
+            ObjectToSpawn = PrefabPlantStagesPlantB[level];
+        }
+        if (plantType == 3)
+        {
+            ObjectToSpawn = PrefabPlantStagesPlantC[level];
+        }
+        //  MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         //ObjectToSpawn = MotherTree.transfer_createGameObject();
-       // MotherTree.createGameObject();
+        // MotherTree.createGameObject();
         //ObjectToSpawn = MotherTree.TreeDM;
         pm = FindObjectOfType<PlacementManager>();
     

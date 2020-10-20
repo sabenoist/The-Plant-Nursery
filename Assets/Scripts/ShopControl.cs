@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using IPlantInterface.cs;
+using System.CodeDom.Compiler;using System.Dynamic;
+
 
 public class ShopControl : MonoBehaviour
 {
-    private GameObjectHandler MotherTree;
+    private lokalPlantHandler LocalPlantHandler;
     int moneyAmount;
     int isItemSold1;
     int isItemSold2;
@@ -27,8 +29,8 @@ public class ShopControl : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //MotherTree= GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
-        if (!PlayerPrefs.HasKey("MoneyAmount")) PlayerPrefs.SetInt("MoneyAmount", 100);
+       // MotherTree= GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        if (!PlayerPrefs.HasKey("MoneyAmount")) PlayerPrefs.SetInt("MoneyAmount", 150);
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
 
     }
@@ -79,9 +81,13 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold1", 1);
         itemPrice1.text = "Sold!";
         buyButton1.gameObject.SetActive(false);
-        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
-        MotherTree.createPlant(1);
-        
+
+        LocalPlantHandler = GameObject.Find("test").GetComponent<lokalPlantHandler>();
+        LocalPlantHandler.createPlant(1);
+        LocalPlantHandler.ToString();
+        Debug.LogWarning("Hello, World");
+
+
     }
 
     public void buyItem2()
@@ -90,8 +96,9 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold2", 2);
         itemPrice2.text = "Sold!";
         buyButton2.gameObject.SetActive(false);
-        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
-        MotherTree.createPlant(2);
+        LocalPlantHandler = GameObject.Find("test").GetComponent<lokalPlantHandler>();
+        LocalPlantHandler.createPlant(2);
+        LocalPlantHandler.ToString();
     }
 
     public void buyItem3()
@@ -100,8 +107,8 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold3", 3);
         itemPrice3.text = "Sold!";
         buyButton3.gameObject.SetActive(false);
-        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
-        MotherTree.createPlant(3);
+       // MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        LocalPlantHandler.createPlant(3);
     }
 
     public void exitShop()
@@ -113,7 +120,7 @@ public class ShopControl : MonoBehaviour
 
     public void resetPlayerPrefs()
     {
-        moneyAmount = 100;
+        moneyAmount = 150;
        // buyButton1.gameObject.SetActive(true);
        // buyButton2.gameObject.SetActive(true);
        // buyButton3.gameObject.SetActive(true);

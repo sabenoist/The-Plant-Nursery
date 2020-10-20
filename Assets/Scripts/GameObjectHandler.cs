@@ -44,7 +44,8 @@ namespace IPlantInterface.cs
 
         public void createPlant(int plantType)
         {
-            if(amountOfPlants < 3)
+            Debug.LogWarning("Hello, World from gameObjectHandler");
+            if (amountOfPlants < 3)
             {
                 int i = 0;
                  while(ArrayOfPlants[i] != null)

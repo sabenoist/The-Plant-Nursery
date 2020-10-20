@@ -10,7 +10,7 @@ public class lokalPlantHandler: MonoBehaviour
     // Start is called before the first frame update.
     void Start()
     {
-       // MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        //MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
     }
 
     // Update is called once per frame.
@@ -22,8 +22,10 @@ public class lokalPlantHandler: MonoBehaviour
     /*
        Creates a new plantObject into the array if possible. Planttype decides the planttype. Use 1-3.
     */     
-    public void createPlant(int plantType) 
+    public void createPlant(int plantType)
     {
+        Debug.LogWarning("Hello, World from lokal plantHandler");
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.createPlant(plantType-1);
     }
 
@@ -32,6 +34,7 @@ public class lokalPlantHandler: MonoBehaviour
     */
     public void destroyPlant()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.destroyPlant();
     }
 
@@ -40,6 +43,7 @@ public class lokalPlantHandler: MonoBehaviour
     */
     public void selectPlant(int activPlant)
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.selectPlant(activPlant-1);
     }
     /*
@@ -47,6 +51,7 @@ public class lokalPlantHandler: MonoBehaviour
     */
     public void watering()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.watering();
     }
     /*
@@ -54,6 +59,7 @@ public class lokalPlantHandler: MonoBehaviour
     */
     public void dryening()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.dryening();
     }
 
@@ -62,6 +68,7 @@ public class lokalPlantHandler: MonoBehaviour
     */
     public int getWaterLevel()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         return MotherTree.getWaterLevel();
     }
 
@@ -70,6 +77,7 @@ public class lokalPlantHandler: MonoBehaviour
     */
     public void createGameObject()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.createGameObject();
     }
     /*
@@ -84,6 +92,7 @@ public class lokalPlantHandler: MonoBehaviour
     */
     public void DestroyGameObject()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.Destroy();
     }
 
@@ -92,6 +101,7 @@ public class lokalPlantHandler: MonoBehaviour
     */
     public void toString()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.toString();
     }
 }

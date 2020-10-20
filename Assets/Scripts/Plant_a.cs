@@ -77,7 +77,7 @@ namespace IPlantInterface.cs
             DebugString += "Thirsty: " + isThirstyFunction() + System.Environment.NewLine + "moisture " + moisturised + System.Environment.NewLine;
             DebugString += "Level: " + level + System.Environment.NewLine + "Skin: " + whichSkin();
 
-            Debug.Log(DebugString);
+            Debug.LogWarning(DebugString);
         }
 
         public string getName()

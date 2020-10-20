@@ -573,8 +573,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa1a5bba90da6d458bf6cdeb5c8f694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToSpawn: {fileID: 6582829634472349072, guid: 2bab4c2dc05c5e443a026b1883f30ddb, type: 3}
+  ObjectToSpawn: {fileID: 0}
   pm: {fileID: 1994044043}
+  PrefabPlantStagesPlantA:
+  - {fileID: 0}
+  - {fileID: 156105073887666519, guid: 3c529a829c3527c4ba87a782b5cb13b1, type: 3}
+  - {fileID: 8357278441291822917, guid: d1545f67013b70e4780761b5e7a55cc0, type: 3}
+  - {fileID: 6582829634472349072, guid: 2bab4c2dc05c5e443a026b1883f30ddb, type: 3}
+  PrefabPlantStagesPlantB:
+  - {fileID: 0}
+  - {fileID: 322658809054851030, guid: ab11e219982fc6040b31bb67902fe7da, type: 3}
+  - {fileID: 912167800957555197, guid: c57e2695862134642a50653385cde0f7, type: 3}
+  - {fileID: 1043642608834089491, guid: dfcd1385cdf512a45abce074e8d858b3, type: 3}
+  PrefabPlantStagesPlantC:
+  - {fileID: 0}
+  - {fileID: 44974829456685108, guid: 6cd26dabe4aa44646a048f996bdf7407, type: 3}
+  - {fileID: 8320294245763770797, guid: 745a14450e3c3e047abc85ad821465fa, type: 3}
+  - {fileID: 2226123886117887759, guid: 1ee6cc23e6f954340b86b58ce7bac5ba, type: 3}
 --- !u!4 &995626559
 Transform:
   m_ObjectHideFlags: 0
@@ -968,8 +983,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -7.399994, y: 0}
+  m_SizeDelta: {x: -14.811752, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1743710308
 MonoBehaviour:
@@ -1126,6 +1141,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d805900d9240b4f9a5bda2306a7099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1966395245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1966395247}
+  - component: {fileID: 1966395246}
+  m_Layer: 0
+  m_Name: LokalPlantHandlerGO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1966395246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966395245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f0b9c161006d349aafdb92863161b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1966395247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966395245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 297.1634, y: 300.38098, z: -290.81274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1994044041
 GameObject:
   m_ObjectHideFlags: 0
