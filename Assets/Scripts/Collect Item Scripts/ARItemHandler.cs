@@ -9,20 +9,10 @@ public class ARItemHandler : MonoBehaviour {
 
     public string type;
 
-    void Start() {
-        
-    }
-
-
-    void Update() {
-        
-    }
-
     public void itemTapped() {
         MapData.itemCaptured = true;
 
-        //create item for item menu here
-        Debug.LogWarning(type + " was tapped!");
+        ItemPouchData.createItem(type);
 
         gameObject.Destroy();
     }
