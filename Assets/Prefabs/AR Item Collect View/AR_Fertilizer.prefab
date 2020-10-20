@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8814315410443863181
+--- !u!1 &8921759840515016995
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8149665427215244855}
-  - component: {fileID: 5095460224316035474}
-  - component: {fileID: 7012739426038949208}
-  - component: {fileID: 273454441216681508}
-  - component: {fileID: 7089668928646170524}
+  - component: {fileID: 8114261546597487513}
+  - component: {fileID: 5130864929032707132}
+  - component: {fileID: 6976226722304878838}
+  - component: {fileID: 2910118528621982011}
+  - component: {fileID: 5083006664343549040}
   m_Layer: 0
-  m_Name: FertilizerMapItem
+  m_Name: AR_Fertilizer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8149665427215244855
+--- !u!4 &8114261546597487513
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8814315410443863181}
-  m_LocalRotation: {x: 0.000000030908623, y: 0.7071068, z: 0.7071067, w: 0.000000030908616}
-  m_LocalPosition: {x: 11.315299, y: -4.8532877, z: 0.20691696}
-  m_LocalScale: {x: -129, y: -202, z: -6}
+  m_GameObject: {fileID: 8921759840515016995}
+  m_LocalRotation: {x: 0.17101006, y: -0.17101006, z: 0.96984637, w: 0.030153684}
+  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalScale: {x: 100, y: 160, z: 6}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5095460224316035474
+  m_LocalEulerAnglesHint: {x: 20, y: 20, z: 180}
+--- !u!33 &5130864929032707132
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8814315410443863181}
+  m_GameObject: {fileID: 8921759840515016995}
   m_Mesh: {fileID: 8479549494945012600, guid: 7a45aff52e138fa4290d6d007f188b67, type: 3}
---- !u!23 &7012739426038949208
+--- !u!23 &6976226722304878838
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8814315410443863181}
+  m_GameObject: {fileID: 8921759840515016995}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,31 +83,44 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &273454441216681508
+--- !u!65 &2910118528621982011
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8921759840515016995}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019822655, y: 0.021189706, z: 0.14154595}
+  m_Center: {x: 0.000013187584, y: -0.0021981017, z: -0.015078168}
+--- !u!114 &5083006664343549040
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8814315410443863181}
+  m_GameObject: {fileID: 8921759840515016995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2f794b464accf840801790bd7718dad, type: 3}
+  m_Script: {fileID: 11500000, guid: 3caaeb36df9eca241882118b7197a11e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: fertilizer
-  maxDistance: 50
-  minDistance: 8
-  proximateItemMarkerPrefab: {fileID: 3141031845338234685, guid: 46a092da1af87d24090ec7b63d0d7fa2, type: 3}
---- !u!114 &7089668928646170524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8814315410443863181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e16982ffb393afd4c8a36e34e5562b10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  interactEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5083006664343549040}
+        m_TargetAssemblyTypeName: ARItemHandler, Assembly-CSharp
+        m_MethodName: itemTapped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  type: fertilizer

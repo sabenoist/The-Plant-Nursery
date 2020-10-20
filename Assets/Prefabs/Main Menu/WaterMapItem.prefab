@@ -113,8 +113,7 @@ MonoBehaviour:
   itemType: water
   maxDistance: 50
   minDistance: 8
-  testAway: {fileID: 2100000, guid: 9e4d76b27b316c545a12b59f4b0a7fbc, type: 2}
-  testProximate: {fileID: 2100000, guid: cea9961b8c4289746871146796803fc8, type: 2}
+  proximateItemMarkerPrefab: {fileID: 3141031845338234685, guid: 46a092da1af87d24090ec7b63d0d7fa2, type: 3}
 --- !u!114 &3834042605518726437
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using IPlantInterface.cs;
-using System.CodeDom.Compiler;using System.Dynamic;
+using System.CodeDom.Compiler;
+using System.Dynamic;
 
 
 public class ShopControl : MonoBehaviour

@@ -8,8 +8,7 @@ public class MapItemHandler : MonoBehaviour {
     public int maxDistance;
     public int minDistance;
 
-    public Material testAway;
-    public Material testProximate;
+    public GameObject proximateItemMarkerPrefab;
 
     void Start() {
         MapData.itemsOnMap.Add(gameObject);
@@ -26,11 +25,13 @@ public class MapItemHandler : MonoBehaviour {
     public void ProximityCheck() {
         if (Vector3.Distance(MapData.player.transform.position, transform.position) < minDistance && MapData.proximateItem == null) {
             MapData.proximateItem = gameObject;
-            gameObject.GetComponent<MeshRenderer>().material = testProximate;
 
+            MapData.proximateItemMarker = Instantiate(proximateItemMarkerPrefab, transform.position, Quaternion.identity);
+            MapData.proximateItemMarker.transform.Rotate(-90,0,0);
         } else if (Vector3.Distance(MapData.player.transform.position, transform.position) > minDistance && MapData.proximateItem == gameObject) {
             MapData.proximateItem = null;
-            gameObject.GetComponent<MeshRenderer>().material = testAway;
+            MapData.proximateItemMarker.Destroy();
+            MapData.proximateItemMarker = null;
         }
     }
 
