@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waterPrefab: {fileID: 3830675059964600005, guid: 31bdbc4367dbc0345b3312b2e0be789b, type: 3}
-  fertilizerPrefab: {fileID: 3830675059964600005, guid: 1ebecce69ffbc964cbb1fbdd62600c11, type: 3}
+  fertilizerPrefab: {fileID: 8814315410443863181, guid: 1ebecce69ffbc964cbb1fbdd62600c11, type: 3}
   potPrefab: {fileID: 3830675059964600005, guid: 2656a24c5f5c35e4aa1d4bf54ab66ed8, type: 3}
   chanceWater: 80
   chanceFertilizer: 10

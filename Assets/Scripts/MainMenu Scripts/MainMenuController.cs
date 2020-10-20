@@ -85,9 +85,11 @@ public class MainMenuController : MonoBehaviour {
         if (randomNumber < chanceWater) {
             Instantiate(waterPrefab, pos, Quaternion.identity);
         } else if (randomNumber < chanceFertilizer + chanceWater) {
-            Instantiate(fertilizerPrefab, pos, Quaternion.identity);
+            GameObject item = Instantiate(fertilizerPrefab, pos, Quaternion.identity);
+            item.transform.Rotate(20, 20, 0);
         } else {
-            Instantiate(potPrefab, pos, Quaternion.identity);
+            GameObject item = Instantiate(potPrefab, pos, Quaternion.identity);
+            item.transform.Rotate(30, 0, 0);
         }
 
         itemCounter++;
