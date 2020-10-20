@@ -27,7 +27,7 @@ public class ShopControl : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        //MotherTree= GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         if (!PlayerPrefs.HasKey("MoneyAmount")) PlayerPrefs.SetInt("MoneyAmount", 100);
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
 
@@ -79,8 +79,9 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold1", 1);
         itemPrice1.text = "Sold!";
         buyButton1.gameObject.SetActive(false);
-
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.createPlant(1);
+        
     }
 
     public void buyItem2()
@@ -89,6 +90,7 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold2", 2);
         itemPrice2.text = "Sold!";
         buyButton2.gameObject.SetActive(false);
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.createPlant(2);
     }
 
@@ -98,6 +100,7 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("IsItemSold3", 3);
         itemPrice3.text = "Sold!";
         buyButton3.gameObject.SetActive(false);
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.createPlant(3);
     }
 
@@ -116,5 +119,6 @@ public class ShopControl : MonoBehaviour
        // buyButton3.gameObject.SetActive(true);
         PlayerPrefs.DeleteAll();
     }
+    
 
 }

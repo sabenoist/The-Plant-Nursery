@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    private GameObjectHandler someScript;
+    private GameObjectHandler MotherTree;
     void Start()
     {
 
@@ -19,10 +19,10 @@ public class Test : MonoBehaviour
 
     public void testFunction()
     {
-        someScript = GameObject.Find("MotherTree").GetComponent <GameObjectHandler> ();
-        someScript.createPlant(1);
-        someScript.createGameObject();
-        someScript.toString();
+        MotherTree = GameObject.Find("MotherTree").GetComponent <GameObjectHandler> ();
+        MotherTree.createPlant(1);
+        MotherTree.createGameObject();
+        MotherTree.toString();
        // someScript.
        // someScript.createGameObject();
     }

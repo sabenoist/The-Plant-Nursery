@@ -13,7 +13,7 @@ namespace IPlantInterface.cs
         private int skin;
         int plantType;
 
-        public void initiatePlant (string name, int plantType) //Could not call constructor from Unity, so made a work-a-round function. Sander pls dont be mad :/
+        public void initiatePlant(string name, int plantType) //Could not call constructor from Unity, so made a work-a-round function. Sander pls dont be mad :/
         {
             this.name = name;
             this.plantType = plantType;
@@ -24,8 +24,8 @@ namespace IPlantInterface.cs
 
         public bool isThirstyFunction()
         {
-           return moisturised < 6;
-        }   
+            return moisturised < 6;
+        }
 
         public bool isAliveFunction()
         {
@@ -34,10 +34,10 @@ namespace IPlantInterface.cs
 
         public void watering()
         {
-            if(isAliveFunction() && moisturised < 10) //Can only moisturise if not dead and not fully satisfied
+            if (isAliveFunction() && moisturised < 10) //Can only moisturise if not dead and not fully satisfied
             {
                 moisturised++;
-                if(!isThirstyFunction()) //Can only grow if not thirsty
+                if (!isThirstyFunction()) //Can only grow if not thirsty
                 {
                     level++;
                 }
@@ -50,7 +50,7 @@ namespace IPlantInterface.cs
             moisturised--;
         }
 
-        public int whichSkin() 
+        public int whichSkin()
         {
             if (level <= 0)
             {
@@ -58,18 +58,18 @@ namespace IPlantInterface.cs
             }
             if (level >= 1 && level < 10)
             {
-                skin = 1;          
+                skin = 1;
             }
             if (level >= 10 && level < 20)
             {
                 skin = 2;
             }
-            if (level >= 20 )
+            if (level >= 20)
             {
                 skin = 3;
             }
             return skin;
-        } 
+        }
 
         public void toString()
         {

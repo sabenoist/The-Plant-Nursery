@@ -22,7 +22,7 @@ public class PlantControl : MonoBehaviour
 
     void Start()
     {
-        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+       // MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
 
         moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
         isItem1Sold = PlayerPrefs.GetInt("IsItemSold1");
@@ -77,16 +77,19 @@ public class PlantControl : MonoBehaviour
 
     public void selectPlant1()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.selectPlant(1);
     }
 
     public void selectPlant2()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.selectPlant(2);
     }
 
     public void selectPlant3()
     {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.selectPlant(3);
     }
 }
