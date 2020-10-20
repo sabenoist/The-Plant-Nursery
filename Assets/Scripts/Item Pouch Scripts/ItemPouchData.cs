@@ -19,7 +19,7 @@ public static class ItemPouchData {
 
     public static Item findItem(string name) {
         foreach (Item item in items) {
-            if (item.getName().Equals("name")) {
+            if (item.getName().Equals(name)) {
                 return item;
             }
         }
