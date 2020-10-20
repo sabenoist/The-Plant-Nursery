@@ -61,6 +61,7 @@ public class PlantControl : MonoBehaviour
         {
             LocalPlantHandler.selectPlant(i);
 
+            //DO NOT DELETE UNTIL HARDCODED STUFF IS GONE!
             if (!LocalPlantHandler.plantExists()) {
                 break;
             }
