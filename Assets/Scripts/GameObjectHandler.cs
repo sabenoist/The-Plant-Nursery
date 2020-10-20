@@ -112,27 +112,7 @@ namespace IPlantInterface.cs
                 TreeDM = Instantiate(PrefabPlantStagesPlantC[skin]);
             }
         }
-        /*
-        public GameObject transfer_createGameObject()
-        {
-            DestroyGameObject();
-            int skin = ArrayOfPlants[activePlant].getSkin();
-            int plantType = ArrayOfPlants[activePlant].getPlantType();
-            if (plantType == 0)
-            {
-                TreeDM = Instantiate(PrefabPlantStagesPlantA[skin]);
-            }
-            if (plantType == 1)
-            {
-                TreeDM = Instantiate(PrefabPlantStagesPlantB[skin]);
-            }
-            if (plantType == 2)
-            {
-                TreeDM = Instantiate(PrefabPlantStagesPlantC[skin]);
-            }
-            return TreeDM;
-        }
-        */
+        
         public void DestroyGameObject()
         {
             Destroy(TreeDM);

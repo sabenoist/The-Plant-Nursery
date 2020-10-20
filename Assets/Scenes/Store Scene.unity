@@ -3345,7 +3345,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plants
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3262502454997897827, guid: d93f6d36e32f26e4b96e665919ee5f60, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d93f6d36e32f26e4b96e665919ee5f60, type: 3}
 --- !u!1 &1406559643
 GameObject:

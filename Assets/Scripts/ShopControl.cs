@@ -81,7 +81,7 @@ public class ShopControl : MonoBehaviour
         buyButton1.gameObject.SetActive(false);
         MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         MotherTree.createPlant(1);
-        MotherTree.toString();
+        
     }
 
     public void buyItem2()
