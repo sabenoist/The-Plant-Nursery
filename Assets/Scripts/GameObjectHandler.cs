@@ -95,6 +95,10 @@ namespace IPlantInterface.cs
             return ArrayOfPlants[activePlant].isThirstyFunction();
         }
 
+        public void fertilize() {
+            ArrayOfPlants[activePlant].increaseLevel(10);
+        }
+
         public int getWaterLevel()
         {
             return (ArrayOfPlants[activePlant].getMoisturised() * 10);

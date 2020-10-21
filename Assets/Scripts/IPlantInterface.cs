@@ -20,5 +20,6 @@ namespace IPlantInterface.cs
         void dryening();
         int whichSkin();
         void toString();
+        void increaseLevel(int amount);
     }
 }

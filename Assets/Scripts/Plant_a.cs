@@ -48,7 +48,7 @@ namespace IPlantInterface.cs
                 moisturised++;
                 if (!isThirstyFunction()) //Can only grow if not thirsty
                 {
-                    level++;
+                    increaseLevel(1);
                 }
             }
             whichSkin();
@@ -112,6 +112,14 @@ namespace IPlantInterface.cs
         public int getPlantType()
         {
             return plantType;
+        }
+
+        public void increaseLevel(int amount) {
+            this.level += amount;
+
+            if (this.level > 30) {
+                this.level = 30;
+            }
         }
     }
 }

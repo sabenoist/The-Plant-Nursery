@@ -78,24 +78,6 @@ public class ShopControl : MonoBehaviour
         {
             buyButton4.interactable = false;
         }
-        if (moneyAmount >= 150)
-        {
-            buyButton5.interactable = true;
-        }
-        else
-        {
-            buyButton5.interactable = false;
-        }
-        if (moneyAmount >= 150)
-        {
-            buyButton6.interactable = true;
-        }
-        else
-        {
-            buyButton6.interactable = false;
-        }
-
-
     }
 
     public void buyItem1() //refer to plant1 buyButton , if item 1 is sold, set priceText to sold, disable buybutton

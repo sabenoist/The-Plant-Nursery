@@ -1731,7 +1731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6437133729700724594, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6437133729700724594, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1777,6 +1777,34 @@ PrefabInstance:
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
       objectReference: {fileID: 21300000, guid: 1c3a099a17fd3ca4e896c4b6c0b80f00, type: 3}
+    - target: {fileID: 6437133729700724594, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ChangeScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437133729700724594, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437133729700724594, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437133729700724594, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6437133730532330907}
+    - target: {fileID: 6437133729700724594, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: changeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437133729700724594, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437133729700724594, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Use Item On Plants
+      objectReference: {fileID: 0}
     - target: {fileID: 6437133729700724595, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1863,3 +1891,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
+--- !u!1 &6437133730532330906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6437133729700724592, guid: e3619eb0acfcff04ab7650ca7128d612, type: 3}
+  m_PrefabInstance: {fileID: 6437133730532330905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6437133730532330907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6437133730532330906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d805900d9240b4f9a5bda2306a7099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

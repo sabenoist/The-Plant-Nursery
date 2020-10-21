@@ -128,8 +128,6 @@ public class PlantControl : MonoBehaviour
         WaterPlantA[0].SetActive(false);
         WaterPlantA[1].SetActive(false);
         LocalPlantHandler.destroyPlant();
-
-        PlayerPrefs.DeleteAll(); 
     }
 
     public void delete1()
@@ -143,8 +141,6 @@ public class PlantControl : MonoBehaviour
         WaterPlantB[0].SetActive(false);
         WaterPlantB[1].SetActive(false);
         LocalPlantHandler.destroyPlant();
-
-        PlayerPrefs.DeleteAll();
     }
 
     public void delete2()
@@ -158,21 +154,20 @@ public class PlantControl : MonoBehaviour
         WaterPlantC[0].SetActive(false);
         WaterPlantC[1].SetActive(false);
         LocalPlantHandler.destroyPlant();
-
-        PlayerPrefs.DeleteAll();
     }
 
-    /* public void delete2()
-     {
-         PlayerPrefs.DeleteAll();
-         item2.SetActive(false);
-     }
+    public void useItem(int plantSelector) {
+        LocalPlantHandler.selectPlant(plantSelector);
 
-     public void delete3()
-     {
-         PlayerPrefs.DeleteAll();
-         item3.SetActive(false);
-     }
-     */
+        string item = ItemSceneController.item.GetName();
+        ItemSceneController.item.DecreaseAmount(1);
 
+        if (item.Equals("Water")) {
+            LocalPlantHandler.watering();
+        } else if (item.Equals("Fertilizer")) {
+            LocalPlantHandler.fertilize();
+        }
+
+        SceneManager.LoadScene("My Pouch");
+    }
 }

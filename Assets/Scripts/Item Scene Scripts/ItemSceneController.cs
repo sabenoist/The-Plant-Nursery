@@ -40,8 +40,6 @@ public class ItemSceneController : MonoBehaviour {
     private void SetWater() {
         image.sprite = waterSprite;
         description.text = "Can be used on your plants to water them.";
-
-        // TODO: set Use button to water plants
     }
 
     private void SetPlantPot() {
@@ -55,8 +53,6 @@ public class ItemSceneController : MonoBehaviour {
     private void SetFertilizer() {
         description.text = "Can be used on your plants to accelarate their growth.";
         image.sprite = fertilizerSprite;
-
-        // TODO: set Use button to grow plants
     }
 
     void Update() {

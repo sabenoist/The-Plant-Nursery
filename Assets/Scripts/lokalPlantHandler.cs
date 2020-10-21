@@ -99,6 +99,14 @@ public class lokalPlantHandler: MonoBehaviour
     }
 
     /*
+     * Fertilizes the plant, increases its level by 10.
+     */
+    public void fertilize() {
+        MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+        MotherTree.fertilize();
+    }
+
+    /*
      Creates a new GAMEOBJECT into the UNITY SCENE. Only 1 at time allowed.
     */
     public void createGameObject()
@@ -131,6 +139,9 @@ public class lokalPlantHandler: MonoBehaviour
         MotherTree.toString();
     }
 
+    /*
+     * Keeps the hardcoded mess from crashing.
+     */
     public bool plantExists() {
         MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
         return (MotherTree.plantExists());
