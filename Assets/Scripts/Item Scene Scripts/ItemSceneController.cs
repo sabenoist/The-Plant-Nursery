@@ -12,7 +12,7 @@ public class ItemSceneController : MonoBehaviour {
     Text title;
     Text description;
 
-    Item item;
+    public static Item item;
 
     void Start() {
         item = ItemPouchData.selectedItem;
@@ -48,7 +48,8 @@ public class ItemSceneController : MonoBehaviour {
         image.sprite = potSprite;
         description.text = "Can be combined with seeds to grow a new plant.";
 
-        // TODO: disable Use button
+        Button button = gameObject.transform.GetChild(2).transform.GetChild(2).gameObject.GetComponent<Button>();
+        button.interactable = false;
     }
 
     private void SetFertilizer() {
