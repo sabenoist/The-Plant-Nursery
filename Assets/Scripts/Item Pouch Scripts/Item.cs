@@ -21,6 +21,7 @@ public class Item {
 
     public void IncreaseAmount(int increase) {
         amount += increase;
+        ItemPouchData.SaveItems();
     }
 
     public void DecreaseAmount(int decrease) {
@@ -29,5 +30,6 @@ public class Item {
         if (amount < 1) {
             ItemPouchData.items.Remove(this);
         }
+        ItemPouchData.SaveItems();
     }
 }

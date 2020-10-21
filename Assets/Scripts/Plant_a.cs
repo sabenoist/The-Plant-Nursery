@@ -65,15 +65,15 @@ namespace IPlantInterface.cs
             {
                 skin = 0;
             }
-            if (level >= 1 && level < 10)
+            else if (level >= 1 && level < 10)
             {
                 skin = 1;
             }
-            if (level >= 10 && level < 20)
+            else if (level >= 10 && level < 20)
             {
                 skin = 2;
             }
-            if (level >= 20)
+            else if (level >= 20)
             {
                 skin = 3;
             }
