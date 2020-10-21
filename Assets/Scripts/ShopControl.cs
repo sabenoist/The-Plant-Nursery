@@ -24,8 +24,7 @@ public class ShopControl : MonoBehaviour
     public Button buyButton2;
     public Button buyButton3;
     public Button buyButton4;
-    public Button buyButton5;
-    public Button buyButton6;
+
 
     // Use this for initialization
     void Start()
@@ -89,8 +88,8 @@ public class ShopControl : MonoBehaviour
 
         LocalPlantHandler = GameObject.Find("test").GetComponent<lokalPlantHandler>(); //get lokalPlantHandler script in test gameobject
         LocalPlantHandler.createPlant(1); //call createPlant function, sent int 1 to create plantType 1
-       
-       
+
+        PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
 
     }
 
@@ -102,7 +101,9 @@ public class ShopControl : MonoBehaviour
        // buyButton2.gameObject.SetActive(false);
         LocalPlantHandler = GameObject.Find("test").GetComponent<lokalPlantHandler>();
         LocalPlantHandler.createPlant(2);
-       
+
+        PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
+
     }
 
     public void buyItem3()
@@ -113,23 +114,17 @@ public class ShopControl : MonoBehaviour
        // buyButton3.gameObject.SetActive(false);
         LocalPlantHandler = GameObject.Find("test").GetComponent<lokalPlantHandler>();
         LocalPlantHandler.createPlant(3);
+
+        PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
     }
 
     public void buyItem4()
     {
         moneyAmount -= 150;
-    }
+        ItemPouchData.AddItem("Fertilizer");
 
-    public void buyItem5()
-    {
-        moneyAmount -= 150;
+        PlayerPrefs.SetInt("MoneyAmount", moneyAmount);
     }
-
-    public void buyItem6()
-    {
-        moneyAmount -= 150;
-    }
-
 
     public void exitShop()
     {

@@ -104,7 +104,7 @@ public class lokalPlantHandler: MonoBehaviour
     public void fertilize() {
         MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
 
-        while(MotherTree.getWaterLevel() < 6) {
+        while (MotherTree.isThirstyFunction()) {
             MotherTree.watering();
         }
 

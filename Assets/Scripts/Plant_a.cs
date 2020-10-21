@@ -51,7 +51,7 @@ namespace IPlantInterface.cs
                     increaseLevel(1);
                 }
             }
-            whichSkin();
+            skin = whichSkin();
         }
 
         public void dryening()
@@ -106,6 +106,7 @@ namespace IPlantInterface.cs
 
         public int getSkin()
         {
+
             return skin;
         }
 
@@ -120,6 +121,8 @@ namespace IPlantInterface.cs
             if (this.level > 30) {
                 this.level = 30;
             }
+
+            skin = whichSkin();
         }
     }
 }
