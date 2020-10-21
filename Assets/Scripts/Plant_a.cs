@@ -29,7 +29,16 @@ namespace IPlantInterface.cs
 
         public bool isAliveFunction()
         {
-            return moisturised >= 1;
+           /* bool isAlive = false;
+            if (moisturised >= 1)
+            {
+                bool isAlive = true;
+
+            }
+
+            return isAlive;
+            */
+           return moisturised >= 1;
         }
 
         public void watering()

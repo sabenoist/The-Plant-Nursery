@@ -39,55 +39,76 @@ public class ShopControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         moneyAmountText.text = moneyAmount.ToString(); //mooneyAmount is int
 
         isItemSold1 = PlayerPrefs.GetInt("IsItemSold1");
         isItemSold2 = PlayerPrefs.GetInt("IsItemSold2");
         isItemSold3 = PlayerPrefs.GetInt("IsItemSold3");
 
-        if (moneyAmount >= 50 && isItemSold1 == 0)
+        if (moneyAmount >= 50)
         {
+           
             buyButton1.interactable = true;
         }
         else
             buyButton1.interactable = false;
 
-        if (moneyAmount >= 100 && isItemSold2 == 0)
+        if (moneyAmount >= 100)
         {
             buyButton2.interactable = true;
         }
         else
             buyButton2.interactable = false;
 
-        if (moneyAmount >= 150 && isItemSold3 == 0)
+        if (moneyAmount >= 150)
         {
             buyButton3.interactable = true;
         }
         else
+        {
             buyButton3.interactable = false;
+        }
 
-        if (moneyAmount <=150 )
+        if (moneyAmount >= 150)
+        {
+            buyButton4.interactable = true;
+        }
+        else
         {
             buyButton4.interactable = false;
+        }
+        if (moneyAmount >= 150)
+        {
+            buyButton5.interactable = true;
+        }
+        else
+        {
             buyButton5.interactable = false;
+        }
+        if (moneyAmount >= 150)
+        {
+            buyButton6.interactable = true;
+        }
+        else
+        {
             buyButton6.interactable = false;
         }
-        
+
+
     }
 
     public void buyItem1() //refer to plant1 buyButton , if item 1 is sold, set priceText to sold, disable buybutton
     {
         moneyAmount -= 50;
         PlayerPrefs.SetInt("IsItemSold1", 1);
-        itemPrice1.text = "Sold!";
-        buyButton1.gameObject.SetActive(false);
+        //itemPrice1.text = "Sold!";
+        //buyButton1.gameObject.SetActive(false);
 
         LocalPlantHandler = GameObject.Find("test").GetComponent<lokalPlantHandler>(); //get lokalPlantHandler script in test gameobject
         LocalPlantHandler.createPlant(1); //call createPlant function, sent int 1 to create plantType 1
-        LocalPlantHandler.ToString();//debuging
-        Debug.LogWarning("Hello, World");//debuging
-
+       
+       
 
     }
 
@@ -95,22 +116,38 @@ public class ShopControl : MonoBehaviour
     {
         moneyAmount -= 100;
         PlayerPrefs.SetInt("IsItemSold2", 2);
-        itemPrice2.text = "Sold!";
-        buyButton2.gameObject.SetActive(false);
+        //itemPrice2.text = "Sold!";
+       // buyButton2.gameObject.SetActive(false);
         LocalPlantHandler = GameObject.Find("test").GetComponent<lokalPlantHandler>();
         LocalPlantHandler.createPlant(2);
-        LocalPlantHandler.ToString();
+       
     }
 
     public void buyItem3()
     {
         moneyAmount -= 150;
         PlayerPrefs.SetInt("IsItemSold3", 3);
-        itemPrice3.text = "Sold!";
-        buyButton3.gameObject.SetActive(false);
+       // itemPrice3.text = "Sold!";
+       // buyButton3.gameObject.SetActive(false);
         LocalPlantHandler = GameObject.Find("test").GetComponent<lokalPlantHandler>();
         LocalPlantHandler.createPlant(3);
     }
+
+    public void buyItem4()
+    {
+        moneyAmount -= 150;
+    }
+
+    public void buyItem5()
+    {
+        moneyAmount -= 150;
+    }
+
+    public void buyItem6()
+    {
+        moneyAmount -= 150;
+    }
+
 
     public void exitShop()
     {

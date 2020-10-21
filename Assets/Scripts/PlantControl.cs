@@ -130,21 +130,49 @@ public class PlantControl : MonoBehaviour
         LocalPlantHandler.destroyPlant();
 
         PlayerPrefs.DeleteAll(); 
-
-
     }
 
-   /* public void delete2()
+    public void delete1()
     {
+        LocalPlantHandler = GameObject.Find("LokalPlantHandlerGO").GetComponent<lokalPlantHandler>();
+        LocalPlantHandler.selectPlant(1);
+        int plantType = LocalPlantHandler.getPlantType();
+        int skin = LocalPlantHandler.getSkin();
+        IconsPlantB[plantType].SetActive(false);
+        StatusPlantB[skin - 1].SetActive(false);
+        WaterPlantB[0].SetActive(false);
+        WaterPlantB[1].SetActive(false);
+        LocalPlantHandler.destroyPlant();
+
         PlayerPrefs.DeleteAll();
-        item2.SetActive(false);
     }
 
-    public void delete3()
+    public void delete2()
     {
+        LocalPlantHandler = GameObject.Find("LokalPlantHandlerGO").GetComponent<lokalPlantHandler>();
+        LocalPlantHandler.selectPlant(2);
+        int plantType = LocalPlantHandler.getPlantType();
+        int skin = LocalPlantHandler.getSkin();
+        IconsPlantC[plantType].SetActive(false);
+        StatusPlantC[skin - 1].SetActive(false);
+        WaterPlantC[0].SetActive(false);
+        WaterPlantC[1].SetActive(false);
+        LocalPlantHandler.destroyPlant();
+
         PlayerPrefs.DeleteAll();
-        item3.SetActive(false);
     }
-    */
-    
+
+    /* public void delete2()
+     {
+         PlayerPrefs.DeleteAll();
+         item2.SetActive(false);
+     }
+
+     public void delete3()
+     {
+         PlayerPrefs.DeleteAll();
+         item3.SetActive(false);
+     }
+     */
+
 }
