@@ -6,9 +6,9 @@ public class Item {
     private string name;
     private int amount;
 
-    public Item(string type) {
-        name = type;
-        amount = 1;
+    public Item(string name, int amount) {
+        this.name = name;
+        this.amount = amount;
     }
 
     public string GetName() {

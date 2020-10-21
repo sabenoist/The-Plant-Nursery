@@ -12,7 +12,8 @@ public class ARItemHandler : MonoBehaviour {
     public void itemTapped() {
         MapData.itemCaptured = true;
 
-        ItemPouchData.addItem(type);
+        ItemPouchData.AddItem(type);
+        ItemPouchData.SaveItems();
 
         gameObject.Destroy();
     }
