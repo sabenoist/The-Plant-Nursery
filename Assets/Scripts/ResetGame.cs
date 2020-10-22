@@ -9,5 +9,6 @@ public class ResetGame : MonoBehaviour
        // moneyAmount = 100;
       
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("MoneyAmount", 500);
     }
 }

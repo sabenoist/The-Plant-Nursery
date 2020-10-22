@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using IPlantInterface.cs;
 
 
@@ -12,6 +13,7 @@ public class SpawnPlantManager : MonoBehaviour
     public GameObject[] PrefabPlantStagesPlantA;
     public GameObject[] PrefabPlantStagesPlantB;
     public GameObject[] PrefabPlantStagesPlantC;
+    private int moneyAmount;
 
 
 
@@ -19,6 +21,10 @@ public class SpawnPlantManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (!PlayerPrefs.HasKey("MoneyAmount")) PlayerPrefs.SetInt("MoneyAmount", 500);
+        moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
+        UpdateMoneyText();
+
         LocalPlantHandler = GameObject.Find("LokalPlantHandlerGO").GetComponent<lokalPlantHandler>();
         
         int plantType = LocalPlantHandler.getPlantType();
@@ -55,8 +61,9 @@ public class SpawnPlantManager : MonoBehaviour
            
           GameObject visual = Instantiate(ObjectToSpawn, pm.transform.position, pm.transform.rotation);
        }
-
-
-   
+    }
+    public void UpdateMoneyText() {
+        Text moneyText = GameObject.Find("Canvas").transform.GetChild(1).transform.GetChild(1).gameObject.GetComponent<Text>();
+        moneyText.text = moneyAmount.ToString();
     }
 }
