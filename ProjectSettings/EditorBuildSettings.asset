@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/FelixTestScene.unity
+    path: 
     guid: 24f026cfedf234147bc005bac3f0a612
   - enabled: 1
     path: Assets/Scenes/Start Scene.unity
@@ -44,5 +44,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Store Scene.unity
     guid: d8f5aad9e6cd7c24c8ee219a1e3ec8ab
+  - enabled: 1
+    path: Assets/Scenes/Use Item On Plants.unity
+    guid: 5168e7880b9013c439f7a8cd83a0e596
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 61392a3c218ef6542a7ead6c20a811a1, type: 2}
