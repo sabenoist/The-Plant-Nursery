@@ -5,15 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/FelixTestScene.unity
-    guid: 24f026cfedf234147bc005bac3f0a612
   - enabled: 1
     path: Assets/Scenes/Start Scene.unity
     guid: bb17fd87ced389343af23b6a1e9d9125
@@ -23,18 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 9e9e537f8c8b1b141abb88fa381b8bc3
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/My Pouch.unity
     guid: 6c0249156af2536498ebc1b4126a4a65
   - enabled: 1
     path: Assets/Scenes/My plant.unity
     guid: cb0b67d95f85a0f4fbf055af06fef74a
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Collect Item AR View.unity
     guid: 92a8bfa24a655fd48b3703f51d48c10f
@@ -44,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Store Scene.unity
     guid: d8f5aad9e6cd7c24c8ee219a1e3ec8ab
+  - enabled: 1
+    path: Assets/Scenes/Use Item On Plants.unity
+    guid: 5168e7880b9013c439f7a8cd83a0e596
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 61392a3c218ef6542a7ead6c20a811a1, type: 2}
