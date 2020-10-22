@@ -4064,6 +4064,18 @@ PrefabInstance:
       propertyPath: m_Text
       value: Cancel
       objectReference: {fileID: 0}
+    - target: {fileID: 1805886517073952434, guid: 2d36b04b03dd6c14e8cb4cad241384d5, type: 3}
+      propertyPath: m_Color.r
+      value: 0.28235295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805886517073952434, guid: 2d36b04b03dd6c14e8cb4cad241384d5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.40392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805886517073952434, guid: 2d36b04b03dd6c14e8cb4cad241384d5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3764706
+      objectReference: {fileID: 0}
     - target: {fileID: 1805886517388829528, guid: 2d36b04b03dd6c14e8cb4cad241384d5, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -90
@@ -4882,6 +4894,18 @@ PrefabInstance:
     - target: {fileID: 4486383196326477521, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}
       propertyPath: m_Text
       value: Select a plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486383196326477521, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}
+      propertyPath: m_Color.r
+      value: 0.28235295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486383196326477521, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}
+      propertyPath: m_Color.g
+      value: 0.40392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486383196326477521, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3764706
       objectReference: {fileID: 0}
     - target: {fileID: 5733119166009238259, guid: 4a787e652215a464099ba0fad7b19bd7, type: 3}
       propertyPath: m_RootOrder
