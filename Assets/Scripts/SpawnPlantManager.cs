@@ -32,25 +32,22 @@ public class SpawnPlantManager : MonoBehaviour
         Debug.LogWarning("plantType = " + plantType);
         Debug.LogWarning("level= " + skin);
 
-        if (plantType == 1)
+        if (plantType == 0)
         {
             ObjectToSpawn = PrefabPlantStagesPlantA[skin];
         }
-        if (plantType == 2)
+        if (plantType == 1)
         {
             ObjectToSpawn = PrefabPlantStagesPlantB[skin];
         }
-        if (plantType == 3)
+        if (plantType == 2)
         {
             ObjectToSpawn = PrefabPlantStagesPlantC[skin];
         }
-        //  MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
-        //ObjectToSpawn = MotherTree.transfer_createGameObject();
-        // MotherTree.createGameObject();
-        //ObjectToSpawn = MotherTree.TreeDM;
+      
         pm = FindObjectOfType<PlacementManager>();
     
-      //  MotherTree = GameObject.Find("MotherTree").GetComponent<GameObjectHandler>();
+    
     }
 
     // Update is called once per frame
