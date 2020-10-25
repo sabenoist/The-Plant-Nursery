@@ -6,6 +6,8 @@ public class ItemPouchController : MonoBehaviour {
     public GameObject itemPanelPrefab;
 
     void Start() {
+        ItemPouchData.LoadItems();
+
         GameObject items = GameObject.Find("Items Panel");
 
         foreach (Item item in ItemPouchData.items) {

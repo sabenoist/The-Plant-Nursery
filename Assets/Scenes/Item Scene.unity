@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 645924190}
         m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
-        m_MethodName: playSoundEffect
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -217,7 +217,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 4153600372493943874}
         m_TargetAssemblyTypeName: ItemDeleteButton, Assembly-CSharp
         m_MethodName: ButtonClicked
@@ -352,8 +352,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 645924189}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: changeScene
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -361,7 +361,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: My Pouch
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 645924190}
         m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
         m_MethodName: playSoundEffect
@@ -1178,7 +1178,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 645924190}
         m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
-        m_MethodName: playSoundEffect
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1187,7 +1187,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 6437133730532330907}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: changeScene
