@@ -432,17 +432,17 @@ MonoBehaviour:
   pm: {fileID: 1994044043}
   PrefabPlantStagesPlantA:
   - {fileID: 0}
-  - {fileID: 6582829634472349072, guid: 2bab4c2dc05c5e443a026b1883f30ddb, type: 3}
+  - {fileID: 156105073887666519, guid: 3c529a829c3527c4ba87a782b5cb13b1, type: 3}
   - {fileID: 8357278441291822917, guid: d1545f67013b70e4780761b5e7a55cc0, type: 3}
   - {fileID: 6582829634472349072, guid: 2bab4c2dc05c5e443a026b1883f30ddb, type: 3}
   PrefabPlantStagesPlantB:
   - {fileID: 0}
-  - {fileID: 1043642608834089491, guid: dfcd1385cdf512a45abce074e8d858b3, type: 3}
+  - {fileID: 322658809054851030, guid: ab11e219982fc6040b31bb67902fe7da, type: 3}
   - {fileID: 912167800957555197, guid: c57e2695862134642a50653385cde0f7, type: 3}
   - {fileID: 1043642608834089491, guid: dfcd1385cdf512a45abce074e8d858b3, type: 3}
   PrefabPlantStagesPlantC:
   - {fileID: 0}
-  - {fileID: 2226123886117887759, guid: 1ee6cc23e6f954340b86b58ce7bac5ba, type: 3}
+  - {fileID: 5596555702123368913, guid: bb594c64648fd5c4284dde13f05fea2b, type: 3}
   - {fileID: 8320294245763770797, guid: 745a14450e3c3e047abc85ad821465fa, type: 3}
   - {fileID: 2226123886117887759, guid: 1ee6cc23e6f954340b86b58ce7bac5ba, type: 3}
 --- !u!4 &995626559
